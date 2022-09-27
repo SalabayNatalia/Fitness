@@ -1,0 +1,26 @@
+.footer-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav__link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $ff-roboto-condensed;
+  color: $color-default-white;
+
+  &:hover,
+  &:focus {
+    color: $java;
+
+    border-color: $java;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
