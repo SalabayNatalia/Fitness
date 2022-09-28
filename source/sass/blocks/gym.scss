@@ -1,0 +1,68 @@
+.gym {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: $color-default-white;
+}
+
+.gym__wrapper {
+  display: grid;
+  padding: 0 0 0 60px;
+
+  column-gap: 88px;
+
+  grid-template-columns: auto auto;
+}
+
+.gym__text {
+  align-self: center;
+}
+
+.gym h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  font-size: 49px;
+  line-height: 49px;
+  font-family: $ff-bebas-neue;
+  color: $sapphire;
+  letter-spacing: 0.03em;
+}
+
+.gym h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  font-family: $ff-roboto-condensed;
+  // display: flex;
+  // align-items: center;
+  color: $sapphire;
+}
+
+.gym p {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: $ff-roboto-condensed;
+  // display: flex;
+  // align-items: center;
+  color: $sapphire;
+}
+
+.gym__big-text {
+  @media (max-width: $tablet-size-max) {
+    display: none;
+  }
+}
+
+.gym__image {
+  width: 660px;
+  height: 401px;
+}
