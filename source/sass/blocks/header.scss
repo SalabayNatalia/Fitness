@@ -140,6 +140,8 @@
   @media (max-width: $tablet-size-max) {
     width: 324px;
     height: 390px;
+    margin-top: 0;
+    margin-left: 30px;
   }
 
   @media (max-width: $mobile-size-max) {

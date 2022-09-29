@@ -1,0 +1,49 @@
+.abonements {
+  position: relative;
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: $ghost-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -95px;
+
+    width: 285px;
+    height: 384px;
+
+    background-image: url("../img/decor-catalog.png");
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop-size-min) {
+      background-image: url("../img/decor-catalog.png");
+
+      @supports (background-image: url("../img/decor-catalog.webp")) {
+        background-image: url("../img/decor-catalog.webp");
+      }
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/decor-catalog@2x.png");
+
+        @supports (background-image: url("../img/decor-catalog@2x.webp")) {
+          background-image: url("../img/decor-catalog@2x.webp");
+        }
+      }
+    }
+  }
+}
+
+.abonements h2 {
+  margin-top: 0;
+  margin-bottom: 53px;
+
+  font-size: 49px;
+  line-height: 49px;
+  font-family: $ff-bebas-neue;
+  text-align: center;
+  color: $sapphire;
+  letter-spacing: 0.03em;
+}

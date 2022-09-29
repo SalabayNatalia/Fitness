@@ -1,20 +1,36 @@
 .video__play-button {
   position: absolute;
   top: 1144px;
-  left: 686px;
+  // left: 686px;
+  left: 50%;
 
   width: 72px;
   height: 72px;
 
   background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   border-radius: 50%;
+  transform: translate(-36px);
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .video__button {
   z-index: 10;
 
+  display: block;
   width: 17px;
   height: 17px;
 
   fill: $color-default-white;
+}
+
+.video iframe {
+  z-index: -1;
 }

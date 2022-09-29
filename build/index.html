@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="nojs">
   <div class="wrapper">
     <header class="header">
       <div class="container">
@@ -81,14 +81,99 @@
             <picture>
               <source type="image/webp" srcset="img/video-background.webp 1x, img/video-background@2x.webp 2x">
               <!-- 1x: 364px, 2x: 728px -->
-              <img class="video__media" src="img/video-background.jpg" srcset="img/video-background@2x.jpg 2x" alt="Видео с тренажёрами" width="364" height="228">
+              <img src="img/video-background.jpg" srcset="img/video-background@2x.jpg 2x" alt="Видео с тренажёрами" width="364" height="228">
             </picture>
             <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <button class="video__play-button" type="button">
+            <a class="video__play-button" href="https://www.youtube.com/embed/9TZXsZItgdw">
               <svg class="video__button" width="17" height="17" role="img" aria-label="play">
                 <use xlink:href="img/sprite_auto.svg#play"></use>
               </svg>
-            </button>
+            </a>
+            <!-- <button class="video__play-button" type="button">
+              <svg class="video__button" width="17" height="17" role="img" aria-label="play">
+                <use xlink:href="img/sprite_auto.svg#play"></use>
+              </svg>
+            </button> -->
+          </div>
+        </div>
+      </section>
+      <section class="abonements">
+        <div class="container">
+          <h2>Абонементы</h2>
+          <div class="abonements__tabs tabs">
+            <ul class="list-reset tabs__nav tabs-nav">
+              <li class="tabs-nav__item is-active" data-tab-name="tab-1">1 месяц</li>
+              <li class="tabs-nav__item" data-tab-name="tab-2">6 месяцев</li>
+              <li class="tabs-nav__item" data-tab-name="tab-3">12 месяцев</li>
+            </ul>
+            <div class="tabs__content">
+              <div class="tab tab-1 is-active">
+                <ul class="list-reset tabs__content-list">
+                  <li class="tabs__content-item">
+                    <h3>С тренером</h3>
+                    <h4>12 занятий</h4>
+                    <p class="ddd" data-price>5000&nbsp;<span>p</span></p>
+                    <a class=" tabs__button">купить абонемент</a>
+                  </li>
+                  <li class="tabs__content-item">
+                    <h3>Дневной</h3>
+                    <h4>с 8:00 до 17:00</h4>
+                    <p>1700<span>p</span></p>
+                    <a class="tabs__button">купить абонемент</a>
+                  </li>
+                  <li class="tabs__content-item">
+                    <h3>Полный день</h3>
+                    <h4>с 8:00 до 22:00</h4>
+                    <p>2700<span>p</span></p>
+                    <a class="tabs__button">купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab tab-2">
+                <ul class="list-reset tabs__content-list">
+                  <li class="tabs__content-item">
+                    <h3>С тренером</h3>
+                    <h4>12 занятий</h4>
+                    <p class="ddd" data-price>25000&nbsp;<span>p</span></p>
+                    <a class=" tabs__button">купить абонемент</a>
+                  </li>
+                  <li class="tabs__content-item">
+                    <h3>Дневной</h3>
+                    <h4>с 8:00 до 17:00</h4>
+                    <p>1300<span>p</span></p>
+                    <a class="tabs__button">купить абонемент</a>
+                  </li>
+                  <li class="tabs__content-item">
+                    <h3>Полный день</h3>
+                    <h4>с 8:00 до 22:00</h4>
+                    <p>2200<span>p</span></p>
+                    <a class="tabs__button">купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab tab-3">
+                <ul class="list-reset tabs__content-list">
+                  <li class="tabs__content-item">
+                    <h3>С тренером</h3>
+                    <h4>12 занятий</h4>
+                    <p class="ddd" data-price>40000&nbsp;<span>p</span></p>
+                    <a class=" tabs__button">купить абонемент</a>
+                  </li>
+                  <li class="tabs__content-item">
+                    <h3>Дневной</h3>
+                    <h4>с 8:00 до 17:00</h4>
+                    <p>1000<span>p</span></p>
+                    <a class="tabs__button">купить абонемент</a>
+                  </li>
+                  <li class="tabs__content-item">
+                    <h3>Полный день</h3>
+                    <h4>с 8:00 до 22:00</h4>
+                    <p>1700<span>p</span></p>
+                    <a class="tabs__button">купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -116,6 +201,11 @@
               </picture>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+
         </div>
       </section>
     </main>
@@ -149,21 +239,21 @@
             </ul>
           </nav>
           <ul class="footer__social-list list-reset">
-            <li>
+            <li class="footer__social-item">
               <a class="footer__social-link" href="#">
                 <svg class="footer__social" width="25" height="25" fill="currentColor" role="img" aria-label="instagram">
                   <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="footer__social-item">
               <a class="footer__social-link" href="#">
                 <svg class="footer__social" width="25" height="25" fill="currentColor" role="img" aria-label="Ok">
                   <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="footer__social-item">
               <a class="footer__social-link" href="#">
                 <svg class="footer__social" width="25" height="25" fill="currentColor" role="img" aria-label="LinkId">
                   <use xlink:href="img/sprite_auto.svg#icon-reddit"></use>
