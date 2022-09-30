@@ -78,16 +78,25 @@
             </div>
           </div>
           <div class="gym__video video">
-            <picture>
-              <source type="image/webp" srcset="img/video-background.webp 1x, img/video-background@2x.webp 2x">
-              <!-- 1x: 364px, 2x: 728px -->
-              <img src="img/video-background.jpg" srcset="img/video-background@2x.jpg 2x" alt="Видео с тренажёрами" width="364" height="228">
-            </picture>
-            <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video__image">
+              <picture>
+                <source type="image/webp" srcset="img/video-background.webp 1x, img/video-background@2x.webp 2x">
+                <!-- 1x: 364px, 2x: 728px -->
+                <img src="img/video-background.jpg" srcset="img/video-background@2x.jpg 2x" alt="Видео с тренажёрами" width="364" height="228">
+              </picture>
+            </div>
+            <div class="video__video">
+              <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <a class="video__play-button" href="https://www.youtube.com/embed/9TZXsZItgdw">
-              <svg class="video__button" width="17" height="17" role="img" aria-label="play">
+              <!-- <svg class="video__button" width="17" height="17" role="img" aria-label="play">
                 <use xlink:href="img/sprite_auto.svg#play"></use>
-              </svg>
+              </svg> -->
+              <picture>
+                <source type="image/webp" srcset="img/play.webp 1x, img/play@2x.webp 2x">
+                <!-- 1x: 100px, 2x: 200px -->
+                <img src="img/play.png" srcset="img/play@2x.png 2x" alt="кнопка включения видео" width="100" height="100">
+              </picture>
             </a>
             <!-- <button class="video__play-button" type="button">
               <svg class="video__button" width="17" height="17" role="img" aria-label="play">
@@ -112,19 +121,34 @@
                   <li class="tabs__content-item">
                     <h3>С тренером</h3>
                     <h4>12 занятий</h4>
-                    <p class="ddd" data-price>5000&nbsp;<span>p</span></p>
+                    <span>5000</span>
+                    <p>5000
+                      <svg width="30" height="42" role="img" aria-label="ruble">
+                        <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                      </svg>
+                    </p>
                     <a class=" tabs__button">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Дневной</h3>
                     <h4>с 8:00 до 17:00</h4>
-                    <p>1700<span>p</span></p>
+                    <span>1700</span>
+                    <p>1700
+                      <svg width="30" height="42" role="img" aria-label="ruble">
+                        <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                      </svg>
+                    </p>
                     <a class="tabs__button">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Полный день</h3>
                     <h4>с 8:00 до 22:00</h4>
-                    <p>2700<span>p</span></p>
+                    <span>2700</span>
+                    <p>2700
+                      <svg width="30" height="42" role="img" aria-label="ruble">
+                        <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                      </svg>
+                    </p>
                     <a class="tabs__button">купить абонемент</a>
                   </li>
                 </ul>
@@ -134,19 +158,34 @@
                   <li class="tabs__content-item">
                     <h3>С тренером</h3>
                     <h4>12 занятий</h4>
-                    <p class="ddd" data-price>25000&nbsp;<span>p</span></p>
+                    <span>25000</span>
+                    <p>25000
+                      <svg width="30" height="42" role="img" aria-label="ruble">
+                        <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                      </svg>
+                    </p>
                     <a class=" tabs__button">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Дневной</h3>
                     <h4>с 8:00 до 17:00</h4>
-                    <p>1300<span>p</span></p>
+                    <span>1300</span>
+                    <p>1300
+                      <svg width="30" height="42" role="img" aria-label="ruble">
+                        <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                      </svg>
+                    </p>
                     <a class="tabs__button">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Полный день</h3>
                     <h4>с 8:00 до 22:00</h4>
-                    <p>2200<span>p</span></p>
+                    <span>2200</span>
+                    <p>2200
+                      <svg width="30" height="42" role="img" aria-label="ruble">
+                        <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                      </svg>
+                    </p>
                     <a class="tabs__button">купить абонемент</a>
                   </li>
                 </ul>
@@ -156,19 +195,34 @@
                   <li class="tabs__content-item">
                     <h3>С тренером</h3>
                     <h4>12 занятий</h4>
-                    <p class="ddd" data-price>40000&nbsp;<span>p</span></p>
+                    <span>40000</span>
+                    <p>40000
+                      <svg width="30" height="42" role="img" aria-label="ruble">
+                        <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                      </svg>
+                    </p>
                     <a class=" tabs__button">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Дневной</h3>
                     <h4>с 8:00 до 17:00</h4>
-                    <p>1000<span>p</span></p>
+                    <span>1000</span>
+                    <p>1000
+                      <svg width="30" height="42" role="img" aria-label="ruble">
+                        <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                      </svg>
+                    </p>
                     <a class="tabs__button">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Полный день</h3>
                     <h4>с 8:00 до 22:00</h4>
-                    <p>1700<span>p</span></p>
+                    <span>1700</span>
+                    <p>1700
+                      <svg width="30" height="42" role="img" aria-label="ruble">
+                        <use xlink:href="img/sprite_auto.svg#ruble"></use>
+                      </svg>
+                    </p>
                     <a class="tabs__button">купить абонемент</a>
                   </li>
                 </ul>
@@ -181,23 +235,25 @@
         <div class="container">
           <div class="super-games__wrapper">
             <div class="super-games__text">
-              <h2>super games</h2>
+              <div class="super-games__grid">
+                <h2>super<br>games</h2>
+                <dl class="list-reset super-games__date">
+                  <dt class="super-games__date-word">Дата</dt>
+                  <dd class="super-games__date-number"><span>7</span>Марта<br> 2019</dd>
+                </dl>
+                <dl class="list-reset super-games__time">
+                  <dt class="super-games__time-word">Время</dt>
+                  <dd class="super-games__time-number"><span>12:00</span></dd>
+                </dl>
+              </div>
               <p>Ежегодные соревнования по CrossFit</p>
-              <dl class="super-games__date">
-                <dt>Дата</dt>
-                <dd><span>7</span>Марта<br> 2019</dd>
-              </dl>
-              <dl class="super-games__time">
-                <dt>Время</dt>
-                <dd><span>12:00</span></dd>
-              </dl>
               <a class="super-games__button" href="#">заполнить заявку</a>
             </div>
             <div class="super-games__image">
               <picture>
                 <source type="image/webp" srcset="img/crossfit.webp 1x, img/crossfit@2x.webp 2x">
                 <!-- 1x: 364px, 2x: 728px -->
-                <img class="video__media" src="img/crossfit.jpg" srcset="img/crossfit@2x.jpg 2x" alt="Кроссфит-спортсмен." width="364" height="228">
+                <img src="img/crossfit.jpg" srcset="img/crossfit@2x.jpg 2x" alt="Кроссфит-спортсмен." width="364" height="228">
               </picture>
             </div>
           </div>

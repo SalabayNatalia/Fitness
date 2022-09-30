@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
-  margin: 0 auto;
+  width: 29%;
+  margin: 0 auto 39px;
 
   text-align: center;
 
@@ -12,7 +12,7 @@
 
 .tabs-nav__item {
   // flex: 1;
-  padding-bottom: 20px;
+  padding-bottom: 9px;
 
   font-weight: 400;
   font-size: 20px;
@@ -25,6 +25,8 @@
 }
 
 .tabs-nav__item.is-active {
+  margin-bottom: -3px;
+
   border-color: $crimson;
 }
 
@@ -52,7 +54,7 @@
 .tabs__content-item {
   z-index: 2;
 
-  padding: 68px 77px;
+  padding: 49px 70px 60px;
 
   text-align: center;
 
@@ -65,6 +67,11 @@
     margin: 0 auto;
   }
 
+  @media (max-width: $tablet-size-max) {
+    width: 100%;
+    padding: 33px 35px 60px;
+  }
+
   &:hover {
     border-image: linear-gradient(to bottom right, $torch-red, $cobalt);
     border-image-slice: 1;
@@ -73,19 +80,18 @@
 
 .tabs__content-item h3 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
   font-family: $ff-roboto-condensed;
   color: $sapphire;
-  text-transform: capitalize;
 }
 
 .tabs__content-item h4 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 12px;
 
   font-weight: 400;
   font-size: 16px;
@@ -97,8 +103,8 @@
 }
 
 .tabs__content-item p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: -96px;
+  margin-bottom: 32px;
 
   font-weight: 700;
   font-size: 60px;
@@ -135,14 +141,19 @@
 // }
 
 .tabs__content-item span {
-  font-weight: 400;
-  font-family: $ff-rouble;
-  color: $sapphire;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150%;
+  font-family: $ff-roboto-condensed;
+  // Blend: Pass through
+  // color: $whisper;
+  color: rgba(232, 232, 232, 0.5);
+  // opacity: 48%;
 }
 
 .tabs__button {
   display: block;
-  padding: 27px 10px;
+  padding: 26px 8px 25px;
 
   font-weight: 700;
   font-size: 12px;

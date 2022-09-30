@@ -1,5 +1,5 @@
 .header {
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 50px;
 
   background: conic-gradient(
@@ -11,7 +11,7 @@
   );
 
   @media (max-width: $tablet-size-max) {
-    padding-top: 40px;
+    padding-top: 38px;
   }
 
   @media (max-width: $mobile-size-max) {
@@ -28,11 +28,17 @@
 }
 
 .header__phone {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 26px;
+  line-height: 26px;
   font-family: $ff-bebas-neue;
   color: $color-default-white;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.04em;
+
+  @media (max-width: $tablet-size-max) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
 
   &:hover,
   &:focus {
@@ -61,7 +67,7 @@
 }
 
 .header__title {
-  margin-top: 100px;
+  margin-top: 107px;
   padding-left: 50px;
 
   text-align: right;
@@ -111,8 +117,8 @@
 }
 
 .header__fitness-list {
-  margin-top: -90px;
-  margin-right: 263px;
+  margin-top: -92px;
+  margin-right: 264px;
   margin-bottom: 83px;
 
   text-align: right;
@@ -132,7 +138,7 @@
 .header__image {
   width: 500px;
   height: 556px;
-  margin-top: -10px;
+  margin-top: -5px;
   margin-left: 67px;
 
   grid-column: 2/3;

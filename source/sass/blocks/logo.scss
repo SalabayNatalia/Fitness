@@ -1,9 +1,17 @@
 .logo {
+  display: block;
+  margin-top: 2px;
+
+  @media (max-width: $tablet-size-max) {
+  }
+}
+
+.logo__image {
   width: 89px;
   height: 20px;
 
   @media (max-width: $tablet-size-max) {
     width: 82px;
-    height: 17px;
+    height: 18px;
   }
 }
