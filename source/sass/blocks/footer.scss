@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 40px;
+  padding-top: 44px;
   padding-bottom: 50px;
 
   background-color: $black-russian;
@@ -17,12 +17,22 @@
 
 .footer__wrapper {
   display: grid;
+  // grid-template-columns: auto 1fr auto;
 
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: repeat(4, auto);
+
+  @media (max-width: $mobile-size-max) {
+    column-gap: 70px;
+
+    grid-template-columns: auto 1fr;
+    row-gap: 30px;
+  }
 }
 
 .footer__logo {
-  margin-right: 276px;
+  margin-top: 0;
+  // margin-right: 276px;
+  margin-right: 178px;
 
   @media (max-width: $tablet-size-max) {
     margin-right: 62px;
@@ -35,7 +45,7 @@
 
 .footer__social-list {
   display: grid;
-  justify-content: start;
+  // justify-content: start;
   max-width: 113px;
   margin-left: 15px;
   // gap: 12px;
@@ -48,7 +58,7 @@
   }
 
   @media (max-width: $mobile-size-max) {
-    justify-content: center;
+    // justify-content: center;
     max-width: none;
     margin-left: 0;
   }

@@ -5,6 +5,10 @@
   padding-bottom: 235px;
 
   background-color: $color-default-white;
+
+  @media (max-width: $tablet-size-max) {
+    padding-top: 100px;
+  }
 }
 
 .gym .container {
@@ -37,7 +41,7 @@
 
   @media (max-width: $tablet-size-max) {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
 
     text-align: center;
   }
@@ -54,10 +58,20 @@
   margin-bottom: 5px;
 
   font-size: 49px;
-  line-height: 49px;
+  line-height: 100%;
   font-family: $ff-bebas-neue;
   color: $sapphire;
   letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-size-max) {
+    margin-bottom: 8px;
+
+    font-size: 42px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    font-size: 32px;
+  }
 }
 
 .gym h3 {
@@ -71,6 +85,10 @@
   // display: flex;
   // align-items: center;
   color: $sapphire;
+
+  @media (max-width: $tablet-size-max) {
+    margin-bottom: 34px;
+  }
 }
 
 .gym p {
@@ -84,6 +102,10 @@
   // display: flex;
   // align-items: center;
   color: $sapphire;
+
+  @media (max-width: $tablet-size-max) {
+    padding: 0 55px;
+  }
 }
 
 .gym__big-text {
@@ -109,11 +131,16 @@
   }
 }
 
-.super-games__image img {
+.gym__image img {
   display: block;
   width: 100%;
   height: 100%;
 
   object-fit: cover;
   object-position: center;
+
+  @media (max-width: $tablet-size-max) {
+    width: 678px;
+    height: 345px;
+  }
 }

@@ -8,6 +8,10 @@
   text-align: center;
 
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  @media (max-width: $mobile-size-max) {
+    width: 100%;
+  }
 }
 
 .tabs-nav__item {
@@ -42,7 +46,7 @@
   display: grid;
 
   gap: 40px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
 
   @media (max-width: $tablet-size-max) {
     // display: block;
@@ -54,7 +58,7 @@
 .tabs__content-item {
   z-index: 2;
 
-  padding: 49px 70px 60px;
+  padding: 49px 40px 60px;
 
   text-align: center;
 
@@ -67,7 +71,7 @@
     margin: 0 auto;
   }
 
-  @media (max-width: $tablet-size-max) {
+  @media (max-width: $mobile-size-max) {
     width: 100%;
     padding: 33px 35px 60px;
   }
@@ -148,11 +152,17 @@
   // Blend: Pass through
   // color: $whisper;
   color: rgba(232, 232, 232, 0.5);
+
   // opacity: 48%;
+  @media (max-width: $mobile-size-max) {
+    font-size: 70px;
+  }
 }
 
 .tabs__button {
   display: block;
+  width: 206px;
+  margin: 0 auto;
   padding: 26px 8px 25px;
 
   font-weight: 700;
