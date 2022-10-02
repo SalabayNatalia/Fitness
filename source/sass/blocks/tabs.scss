@@ -21,7 +21,6 @@
 }
 
 .tabs-nav__item {
-  // flex: 1;
   padding-bottom: 9px;
 
   font-weight: 400;
@@ -65,7 +64,6 @@
   grid-template-columns: repeat(3, auto);
 
   @media (max-width: $tablet-size-max) {
-    // display: block;
     grid-template-columns: none;
     grid-template-rows: repeat(3, 1fr);
   }

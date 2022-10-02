@@ -1,3 +1,271 @@
+.discount {
+  padding-top: 116px;
+  padding-bottom: 80px;
+
+  @media (max-width: $tablet-size-max) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    padding-top: 68px;
+    padding-bottom: 40px;
+  }
+}
+
+.discount h2 {
+  margin-top: 0;
+  margin-bottom: 52px;
+
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 100%;
+  font-family: $ff-bebas-neue;
+  text-align: center;
+  color: $sapphire;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-size-max) {
+    margin-bottom: 41px;
+
+    font-size: 42px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    margin-bottom: 43px;
+
+    font-size: 32px;
+  }
+}
+
+.discount__wrapper-promo {
+  display: grid;
+
+  column-gap: 40px;
+
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $tablet-size-max) {
+    display: block;
+
+    grid-template-columns: none;
+  }
+}
+
+.discount__wrapper {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $tablet-size-max) {
+    margin-bottom: 30px;
+
+    grid-template-columns: 279px auto;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    display: block;
+  }
+}
+
 .discount__text {
+  position: relative;
+  // min-height: 462px;
+
+  padding: 34px 35px 83px 45px;
+
+  font-family: $ff-roboto-condensed;
+  color: $color-default-white;
+
   background-color: $torch-red;
+
+  @media (max-width: $tablet-size-max) {
+    padding-right: 45px;
+    padding-bottom: 250px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    padding-bottom: 93px;
+
+    text-align: center;
+  }
+}
+
+.discount__text span {
+  font-size: 28px;
+  line-height: 156%;
+}
+
+.discount__text p {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.discount__text h3 {
+  margin-top: -25px;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 156%;
+
+  @media (max-width: $mobile-size-max) {
+    margin-bottom: -5px;
+  }
+}
+
+.discount__button {
+  line-height: 100%;
+  font-family: $ff-roboto-condensed;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  border-bottom: 1px solid;
+}
+
+.discount__button-text {
+  position: absolute;
+  bottom: 45px;
+
+  padding-bottom: 2px;
+
+  font-size: 14px;
+  color: $color-default-white;
+
+  border-color: $color-default-white;
+
+  @media (max-width: $mobile-size-max) {
+    left: 106px;
+  }
+}
+
+.discount__other-promo-button {
+  font-size: 12px;
+  color: $resolution-blue;
+
+  border-color: $resolution-blue;
+
+  @media (max-width: $tablet-size-max) {
+    position: absolute;
+    bottom: 28px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    bottom: 39px;
+    left: 104px;
+  }
+}
+
+.discount__image {
+  position: relative;
+
+  @media (max-width: $mobile-size-max) {
+    height: 299px;
+  }
+}
+
+.discount__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: top;
+  // object-position: center;
+}
+
+.discount__other-promo-list {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+  row-gap: 44px;
+
+  @media (max-width: $tablet-size-max) {
+    column-gap: 30px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    display: block;
+  }
+}
+
+.discount__other-promo-item {
+  padding: 18px 28px 21px;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  font-family: $ff-roboto-condensed;
+  color: $resolution-blue;
+
+  border: 7px solid $color-transparent;
+  border-image: linear-gradient(to bottom right, $torch-red, $cobalt);
+  border-image-slice: 1;
+
+  @media (max-width: $tablet-size-max) {
+    position: relative;
+
+    padding-bottom: 36px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    padding-top: 29px;
+    padding-bottom: 47px;
+
+    text-align: center;
+  }
+}
+
+.discount__other-promo-item--month {
+  @media (max-width: $tablet-size-max) {
+    padding-right: 65px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    padding-right: 28px;
+  }
+}
+
+.discount__other-promo-item:not(:last-child) {
+  @media (max-width: $mobile-size-max) {
+    margin-bottom: 30px;
+  }
+}
+
+.discount__other-promo-item h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+
+  @media (max-width: $tablet-size-max) {
+    margin-bottom: 3px;
+  }
+}
+
+.discount__other-promo-item p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 55px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  @media (max-width: $mobile-size-max) {
+    padding-bottom: 34px;
+  }
 }

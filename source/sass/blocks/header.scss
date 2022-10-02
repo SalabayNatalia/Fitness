@@ -112,14 +112,7 @@
   color: $color-default-white;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  text-shadow: 0 1px 0 rgb(255, 255, 255), 0 -1px 0 rgb(255, 255, 255),
-    1px 0 0 rgb(255, 255, 255), -1px 0 0 rgb(255, 255, 255),
-    1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
-    -1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255),
-    0 2px 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255),
-    2px 0 0 rgb(255, 255, 255), -2px 0 0 rgb(255, 255, 255),
-    2px 2px 0 rgb(255, 255, 255), 2px -2px 0 rgb(255, 255, 255),
-    -2px 2px 0 rgb(255, 255, 255), -2px -2px 0 rgb(255, 255, 255);
+  text-shadow: $header-shadow-h2;
 
   // border: 2px solid #ffffff;
 
