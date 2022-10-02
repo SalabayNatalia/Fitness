@@ -4,7 +4,7 @@
 @import "vendor/normalize";
 
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -34,10 +34,6 @@
 
 @import "blocks/logo.scss";
 
-@import "blocks/footer.scss";
-
-@import "blocks/footer-nav.scss";
-
 @import "blocks/gym.scss";
 
 @import "blocks/video.scss";
@@ -48,9 +44,21 @@
 
 @import "blocks/super-games.scss";
 
+@import "blocks/coaches.scss";
+
 @import "blocks/advantages.scss";
 
 @import "blocks/discount.scss";
+
+@import "blocks/feedback.scss";
+
+@import "blocks/form.scss";
+
+@import "blocks/contacts.scss";
+
+@import "blocks/footer.scss";
+
+@import "blocks/footer-nav.scss";
 
 // ---------------------------------
 

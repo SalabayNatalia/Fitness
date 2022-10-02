@@ -1,0 +1,159 @@
+.coaches__item {
+  position: relative;
+
+  max-width: 100%;
+  height: auto;
+
+  grid-template-columns: 1fr;
+
+  @media (max-width: $tablet-size-max) {
+    width: 268px;
+
+    justify-self: center;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    width: 226px;
+  }
+}
+
+.coaches__item h3 {
+  position: absolute;
+  right: 30px;
+  bottom: 23px;
+  left: 30px;
+  z-index: 2;
+
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+
+  @media (max-width: $tablet-size-max) {
+    right: 35px;
+    bottom: 27px;
+    left: 35px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    right: 25px;
+    bottom: 17px;
+    left: 25px;
+  }
+}
+
+.coaches__photo {
+  z-index: 2;
+
+  max-width: 100%;
+  height: auto;
+
+  // grid-column: 1/-1;
+  // grid-row: 1/2;
+}
+
+.coaches__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+
+  @media (max-width: $tablet-size-max) {
+    width: 309px;
+    height: 386px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    width: 270px;
+    max-width: 100%;
+  }
+}
+
+.coaches__info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  padding: 28px 21px 35px 25px;
+  overflow: auto;
+
+  color: $color-default-white;
+
+  background-color: $sapphire;
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  // grid-column: 1/-1;
+  // grid-row: 1/2;
+
+  scrollbar-color: #ffffff #808080;
+  scrollbar-width: auto;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #808080;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border: 2px solid #808080;
+    border-radius: 20px;
+  }
+
+  @media (max-width: $tablet-size-max) {
+    max-width: 309px;
+    padding: 30px 30px 34px 35px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    max-width: 270px;
+    padding: 30px 25px 34px 25px;
+  }
+}
+
+.coaches__info h3 {
+  position: static;
+  z-index: 0;
+}
+
+.coaches__info-list {
+  margin-top: 13px;
+  margin-bottom: 25px;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.coaches__info-item {
+  font-weight: 500;
+  color: #f9fbfd;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.coaches__info span {
+  margin: 0 0 12px;
+}
+
+.coaches__item:hover .coaches__photo,
+.coaches__item:focus-within .coaches__photo {
+  z-index: -1;
+
+  opacity: 0.89;
+}
+
+.coaches__item:hover .coaches__info,
+.coaches__item:focus-within .coaches__info {
+  z-index: 1;
+
+  opacity: 0.89;
+}

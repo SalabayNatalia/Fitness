@@ -33,8 +33,7 @@
               <li class="header__fitness-item">Групповые занятия</li>
               <li class="header__fitness-item">Кардио-зона</li>
             </ul>
-            <!-- </div> -->
-            <a class="header__button" href="#catalog">купить абонемент</a>
+            <a class="header__button" href="#abonements">купить абонемент</a>
           </div>
           <div class="header__image">
             <picture>
@@ -44,14 +43,14 @@
             </picture>
           </div>
           <ul class="list-reset header__social-list">
-            <li class="list-reset header__social-item">
-              <a class="list-reset header__social-link">fb</a>
+            <li class="header__social-item">
+              <a class="header__social-link" href="#">fb</a>
             </li>
-            <li class="list-reset header__social-item">
-              <a class="list-reset header__social-link">vk</a>
+            <li class="header__social-item">
+              <a class="header__social-link" href="#">vk</a>
             </li>
-            <li class="list-reset header__social-item">
-              <a class="list-reset header__social-link">ig</a>
+            <li class="header__social-item">
+              <a class="header__social-link" href="#">ig</a>
             </li>
           </ul>
         </section>
@@ -106,7 +105,7 @@
           </div>
         </div>
       </section>
-      <section class="abonements">
+      <section id="abonements" class="abonements">
         <div class="container">
           <h2>Абонементы</h2>
           <div class="abonements__tabs tabs">
@@ -127,7 +126,7 @@
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class=" tabs__button">купить абонемент</a>
+                    <a class="tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Дневной</h3>
@@ -138,7 +137,7 @@
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button">купить абонемент</a>
+                    <a class="tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Полный день</h3>
@@ -149,7 +148,7 @@
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button">купить абонемент</a>
+                    <a class="tabs__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
               </div>
@@ -164,7 +163,7 @@
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class=" tabs__button">купить абонемент</a>
+                    <a class="tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Дневной</h3>
@@ -175,7 +174,7 @@
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button">купить абонемент</a>
+                    <a class="tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Полный день</h3>
@@ -186,7 +185,7 @@
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button">купить абонемент</a>
+                    <a class="tabs__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
               </div>
@@ -201,7 +200,7 @@
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class=" tabs__button">купить абонемент</a>
+                    <a class="tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Дневной</h3>
@@ -212,7 +211,7 @@
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button">купить абонемент</a>
+                    <a class="tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Полный день</h3>
@@ -223,7 +222,7 @@
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button">купить абонемент</a>
+                    <a class="tabs__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
               </div>
@@ -310,6 +309,38 @@
           </ul>
         </div>
       </section>
+      <section class="coaches">
+        <div class="container">
+          <h2>Тренеры</h2>
+          <div class="coaches__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="coaches__item swiper-slide">
+                <h3>Анна Павлова</h3>
+                <div class="coaches__photo">
+                  <picture>
+                    <source type="image/webp" srcset="img/coachPavlova.webp 1x, img/coachPavlova@2x.webp 2x" />
+                    <!--desktop 1x: 260px; 2x: 520px -->
+                    <img src="img/coachPavlova.jpg" srcset="img/coachPavlova@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
+                  </picture>
+                </div>
+                <div class="coaches__info">
+                  <h3>Анна Павлова</h3>
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
       <section class="discount">
         <div class="container">
           <h2>Акции</h2>
@@ -334,15 +365,67 @@
                 <li class="discount__other-promo-item discount__other-promo-item--month">
                   <h3>Месяц бесплатно</h3>
                   <p>Приведи друга, получи абонемент в подарок</p>
-                  <a class="discount__button discount__other-promo-button">подробнее</a>
+                  <a class="discount__button discount__other-promo-button" href="#">подробнее</a>
                 </li>
                 <li class="discount__other-promo-item">
                   <h3>Скидка 20%</h3>
                   <p>Корпоративный фитнес с командой</p>
-                  <a class="discount__button discount__other-promo-button">подробнее</a>
+                  <a class="discount__button discount__other-promo-button" href="#">подробнее</a>
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container">
+          <h2>Отзывы</h2>
+          <div class="feedback__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="feedback__item swiper-slide">
+                <div class="feedback__avatar">
+                  <picture>
+                    <source type="image/webp" srcset="img/feedbackOrlova.webp 1x, img/feedbackOrlova@2x.webp 2x">
+                    <!-- 1x: 80px, 2x: 160px -->
+                    <img src="img/feedbackOrlova.png" srcset="img/feedbackOrlova@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
+                  </picture>
+                </div>
+                <div class="feedback__message">
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </div>
+              <div class="feedback__item swiper-slide">
+                <div class="feedback__avatar">
+                  <picture>
+                    <source type="image/webp" srcset="img/feedbackOrlova.webp 1x, img/feedbackOrlova@2x.webp 2x">
+                    <!-- 1x: 80px, 2x: 160px -->
+                    <img src="img/feedbackOrlova.png" srcset="img/feedbackOrlova@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
+                  </picture>
+                </div>
+                <div class="feedback__message">
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </div>
+              <div class="feedback__item swiper-slide">
+                <div class="feedback__avatar">
+                  <picture>
+                    <source type="image/webp" srcset="img/feedbackOrlova.webp 1x, img/feedbackOrlova@2x.webp 2x">
+                    <!-- 1x: 80px, 2x: 160px -->
+                    <img src="img/feedbackOrlova.png" srcset="img/feedbackOrlova@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
+                  </picture>
+                </div>
+                <div class="feedback__message">
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </section>

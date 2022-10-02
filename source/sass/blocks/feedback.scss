@@ -1,0 +1,56 @@
+.feedback {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  background-color: $color-default-white;
+}
+
+.feedback h2 {
+  margin-top: 0;
+  margin-bottom: 52px;
+
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 100%;
+  font-family: $ff-bebas-neue;
+  text-align: center;
+  color: $sapphire;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.feedback__item {
+  display: grid;
+  max-width: 565px;
+  margin: 0 auto;
+  padding: 62px;
+
+  font-family: $ff-roboto-condensed;
+  color: $color-default-white;
+
+  background-color: $resolution-blue;
+
+  grid-template-columns: 110px auto;
+}
+
+.feedback__avatar {
+  width: 80px;
+  height: 80px;
+  margin-right: 28px;
+}
+
+.feedback__avatar img {
+  display: block;
+}
+
+.feedback h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.feedback p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}

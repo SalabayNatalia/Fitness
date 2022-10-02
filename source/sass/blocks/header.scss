@@ -77,8 +77,6 @@
 }
 
 .header__fitness-info {
-  // display: grid;
-  // grid-template-rows: 1fr min-content auto;
   display: flex;
   flex-direction: column;
 }
@@ -108,13 +106,10 @@
   font-size: 109px;
   line-height: 100%;
   font-family: $ff-bebas-neue;
-  // text-align: right;
   color: $color-default-white;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-shadow: $header-shadow-h2;
-
-  // border: 2px solid #ffffff;
 
   @media (max-width: $tablet-size-max) {
     margin-top: 2px;
