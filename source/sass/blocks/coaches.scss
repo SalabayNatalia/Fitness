@@ -1,10 +1,43 @@
+.coaches {
+  padding-top: 60px;
+  padding-bottom: 110px;
+
+  @media (max-width: $tablet-size-max) {
+    padding-top: 38px;
+  }
+}
+
+.coaches h2 {
+  margin-top: 0;
+  margin-bottom: 52px;
+
+  font-size: 49px;
+  line-height: 100%;
+  font-family: $ff-bebas-neue;
+  color: $sapphire;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-size-max) {
+    margin-bottom: 41px;
+
+    font-size: 42px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    margin-bottom: 22px;
+
+    font-size: 32px;
+  }
+}
+
 .coaches__item {
   position: relative;
 
   max-width: 100%;
   height: auto;
 
-  grid-template-columns: 1fr;
+  // grid-template-columns: 1fr;
 
   @media (max-width: $tablet-size-max) {
     width: 268px;
@@ -17,19 +50,19 @@
   }
 }
 
-.coaches__item h3 {
+.coaches__item-name {
   position: absolute;
-  right: 30px;
   bottom: 23px;
-  left: 30px;
+  left: 78px;
   z-index: 2;
 
   margin: 0;
 
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 27px;
-  color: #f9fbfd;
+  line-height: 150%;
+  font-family: $ff-roboto-condensed;
+  color: $color-default-white;
 
   @media (max-width: $tablet-size-max) {
     right: 35px;
@@ -62,12 +95,12 @@
   object-fit: cover;
 
   @media (max-width: $tablet-size-max) {
-    width: 309px;
-    height: 386px;
+    width: 268px;
+    height: 294px;
   }
 
   @media (max-width: $mobile-size-max) {
-    width: 270px;
+    width: 226px;
     max-width: 100%;
   }
 }
@@ -80,7 +113,7 @@
   left: 0;
   z-index: -1;
 
-  padding: 28px 21px 35px 25px;
+  padding: 28px 21px 35px;
   overflow: auto;
 
   color: $color-default-white;
@@ -108,12 +141,12 @@
   }
 
   @media (max-width: $tablet-size-max) {
-    max-width: 309px;
+    max-width: 268px;
     padding: 30px 30px 34px 35px;
   }
 
   @media (max-width: $mobile-size-max) {
-    max-width: 270px;
+    max-width: 226px;
     padding: 30px 25px 34px 25px;
   }
 }
@@ -121,6 +154,16 @@
 .coaches__info h3 {
   position: static;
   z-index: 0;
+
+  margin-top: 23px;
+  margin-bottom: -4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  font-family: $ff-roboto-condensed;
+  text-align: center;
+  color: $color-default-white;
 }
 
 .coaches__info-list {
@@ -128,20 +171,45 @@
   margin-bottom: 25px;
 
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
 }
 
 .coaches__info-item {
-  font-weight: 500;
-  color: #f9fbfd;
+  position: relative;
+
+  margin-bottom: 13px;
+  margin-left: 51px;
+
+  font-weight: 400;
+  font-family: $ff-roboto-condensed;
+  color: $color-default-white;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -17px;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: $color-default-white;
+    border-radius: 50%;
+  }
 }
 
-.coaches__info span {
-  margin: 0 0 12px;
+.coaches__info p {
+  margin: 0 0 33px;
+
+  font-size: 16px;
+  line-height: 150%;
+  font-family: $ff-roboto-condensed;
+  text-align: center;
+  color: $spindle;
 }
 
 .coaches__item:hover .coaches__photo,
@@ -157,3 +225,50 @@
 
   opacity: 0.89;
 }
+
+.coaches__item:hover .coaches__item-name,
+.coaches__item:focus-within .coaches__item-name {
+  display: none;
+}
+
+.coaches__slider-buttons {
+  position: relative;
+}
+
+.coaches__button-prev {
+  position: relative;
+}
+
+// .coaches__button-next {
+//   position: relative;
+// }
+
+// .coaches__button-prev::after,
+// .coaches__button-next::after {
+//   content: "";
+//   position: absolute;
+
+//   width: 16px;
+//   height: 32px;
+
+//   background-image: url("../img/svg/slider-arrow.svg");
+//   background-repeat: no-repeat;
+// }
+
+// .coaches__button-prev::after {
+//   right: -38px;
+//   bottom: 141px;
+
+//   -webkit-transform: rotate(180deg);
+//      -moz-transform: rotate(180deg);
+//       -ms-transform: rotate(180deg);
+//        -o-transform: rotate(180deg);
+//           transform: rotate(180deg);
+// }
+
+// .coaches__button-next::after {
+//   bottom: 153px;
+//   // background-image: url("../img/svg/slider-arrow.svg");
+//   // background-repeat: no-repeat;
+//   left: 1313px;
+// }

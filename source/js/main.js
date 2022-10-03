@@ -1,7 +1,8 @@
-import { iosVhFix } from './utils/ios-vh-fix';
+import {iosVhFix} from './utils/ios-vh-fix';
 // import { initModals } from './modules/modals/init-modals';
-import { nojs } from './modules/nojs';
-import { activateTab } from './modules/tabs.js';
+import {nojs} from './modules/nojs';
+import {anchor} from './modules/anchor.js';
+import {activateTab} from './modules/tabs.js';
 
 // ---------------------------------
 
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     // initModals();
     nojs();
+    anchor();
     activateTab();
   });
 });

@@ -295,6 +295,12 @@
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
   content: "prev";
+  // content: "";
+  position: absolute;
+  top: -140px;
+  right: -35px;
+
+  font-size: 30px;
 }
 
 .swiper-button-next,
@@ -306,6 +312,12 @@
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   content: "next";
+  // content: "";
+  position: absolute;
+  top: -134px;
+  right: 37px;
+
+  font-size: 30px;
 }
 
 .swiper-button-lock {

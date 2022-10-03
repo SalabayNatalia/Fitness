@@ -26,7 +26,8 @@
   font-family: "BebasNeue";
 
   font-display: swap;
-  src: local("BebasNeue"), url("../fonts/BebasNeue-Bold.woff2") format("woff2"),
+  src: local("BebasNeue"),
+    url("../fonts/BebasNeue-Bold.woff2") format("woff2"),
     url("../fonts/BebasNeue-Bold.woff");
   unicode-range: U+000-5FF;
 }
