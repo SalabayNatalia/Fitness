@@ -24,7 +24,7 @@ const activateTab = function () {
 };
 
 
-export { activateTab };
+export {activateTab};
 
 
 // const activateTab = function () {

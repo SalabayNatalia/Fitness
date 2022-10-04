@@ -1,9 +1,10 @@
-import {iosVhFix} from './utils/ios-vh-fix';
+import { iosVhFix } from './utils/ios-vh-fix';
 // import { initModals } from './modules/modals/init-modals';
-import {nojs} from './modules/nojs';
-import {anchor} from './modules/anchor.js';
-import {activateTab} from './modules/tabs.js';
-
+import { nojs } from './modules/nojs';
+import { anchor } from './modules/anchor.js';
+import { activateTab } from './modules/tabs.js';
+import { activateVideo } from './modules/video.js';
+import { initSwiper } from './modules/swiper';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,8 +21,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     // initModals();
+
     nojs();
     anchor();
+    initSwiper();
+    activateVideo();
     activateTab();
   });
 });
