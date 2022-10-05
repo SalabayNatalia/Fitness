@@ -1,10 +1,10 @@
-import { iosVhFix } from './utils/ios-vh-fix';
+import {iosVhFix} from './utils/ios-vh-fix';
 // import { initModals } from './modules/modals/init-modals';
-import { nojs } from './modules/nojs';
-import { anchor } from './modules/anchor.js';
-import { activateTab } from './modules/tabs.js';
-import { activateVideo } from './modules/video.js';
-import { initSwiper } from './modules/swiper';
+import {nojs} from './modules/nojs';
+import {anchor} from './modules/anchor.js';
+import {activateTab} from './modules/tabs.js';
+import {activateVideo} from './modules/video.js';
+import {initSwiper} from './modules/swiper';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

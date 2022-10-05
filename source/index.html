@@ -2,12 +2,16 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>ProjectName</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Condensed.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="nojs">
@@ -15,7 +19,7 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <a class="header__logo logo">
+          <a class="noselect header__logo logo">
             <svg class="logo__image" width="89" height="25" role="img" aria-label="logo">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
@@ -33,7 +37,7 @@
               <li class="header__fitness-item">Групповые занятия</li>
               <li class="header__fitness-item">Кардио-зона</li>
             </ul>
-            <a class="header__button" data-menu-link href="#abonements">купить абонемент</a>
+            <a class="noselect header__button" data-menu-link href="#abonements">купить абонемент</a>
           </div>
           <div class="header__image">
             <picture>
@@ -44,13 +48,13 @@
           </div>
           <ul class="list-reset header__social-list">
             <li class="header__social-item">
-              <a class="header__social-link" href="#">fb</a>
+              <a class="noselect header__social-link" href="#">fb</a>
             </li>
             <li class="header__social-item">
-              <a class="header__social-link" href="#">vk</a>
+              <a class="noselect header__social-link" href="#">vk</a>
             </li>
             <li class="header__social-item">
-              <a class="header__social-link" href="#">ig</a>
+              <a class="noselect header__social-link" href="#">ig</a>
             </li>
           </ul>
         </section>
@@ -62,15 +66,15 @@
           <div class="gym__wrapper">
             <div class="gym__text">
               <h2>Тренажерный зал</h2>
-              <h3>Просторный зал площадью 900 кв/м</h3>
-              <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <h3>Просторный зал площадью 900&nbsp;кв/м</h3>
+              <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
               <div class="gym__big-text">
-                <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+                <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
               </div>
             </div>
             <div class="gym__image">
               <picture>
-                <source type="image/webp" srcset="img/gym.webp 1x, img/gym@2x.webp 2x" />
+                <source type="image/webp" srcset="img/gym.webp 1x, img/gym@2x.webp 2x">
                 <!--desktop 1x: 660px; 2x: 1320px -->
                 <img src="img/gym.jpg" srcset="img/gym@2x.jpg 2x" width="660" height="401" alt="тренажёры">
               </picture>
@@ -85,23 +89,15 @@
               </picture>
             </div>
             <div class="video__video">
-              <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <a class="video__play-button" href="">
-              <!-- <svg class="video__button" width="17" height="17" role="img" aria-label="play">
-                <use xlink:href="img/sprite_auto.svg#play"></use>
-              </svg> -->
+            <a class="video__play-button" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
               <picture>
                 <source type="image/webp" srcset="img/play.webp 1x, img/play@2x.webp 2x">
                 <!-- 1x: 100px, 2x: 200px -->
                 <img src="img/play.png" srcset="img/play@2x.png 2x" alt="кнопка включения видео" width="100" height="100">
               </picture>
             </a>
-            <!-- <button class="video__play-button" type="button">
-              <svg class="video__button" width="17" height="17" role="img" aria-label="play">
-                <use xlink:href="img/sprite_auto.svg#play"></use>
-              </svg>
-            </button> -->
           </div>
         </div>
       </section>
@@ -110,119 +106,124 @@
           <h2>Абонементы</h2>
           <div class="abonements__tabs tabs">
             <ul class="list-reset tabs__nav tabs-nav">
-              <li class="tabs-nav__item is-active" data-tab-name="tab-1">1 месяц</li>
-              <li class="tabs-nav__item" data-tab-name="tab-2">6 месяцев</li>
-              <li class="tabs-nav__item" data-tab-name="tab-3">12 месяцев</li>
+              <li class="tabs-nav__item is-active" data-tab-name="tab-1">1&nbsp;месяц</li>
+              <li class="tabs-nav__item" data-tab-name="tab-2">6&nbsp;месяцев</li>
+              <li class="tabs-nav__item" data-tab-name="tab-3">12&nbsp;месяцев</li>
             </ul>
+            <!-- <div class="list-reset tabs__nav tabs-nav">
+              <input type="radio" id="1" class="tabs-nav__item checked" data-tab-name="tab-1"><label for="1">1 месяц</label>
+              <input type="radio" id="2" class="tabs-nav__item" data-tab-name="tab-2"><label for="2">6 месяцев</label>
+              <input type="radio" id="3" class="tabs-nav__item" data-tab-name="tab-3"><label for="3">12 месяцев</label>
+            </div> -->
             <div class="tabs__content">
               <div class="tab tab-1 is-active">
                 <ul class="list-reset tabs__content-list">
                   <li class="tabs__content-item">
-                    <h3>С тренером</h3>
-                    <h4>12 занятий</h4>
+                    <h3>С&nbsp;тренером</h3>
+                    <h4>12&nbsp;занятий</h4>
                     <span>5000</span>
                     <p>5000
                       <svg width="30" height="42" role="img" aria-label="ruble">
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button" href="#">купить абонемент</a>
+                    <a class="noselect tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Дневной</h3>
-                    <h4>с 8:00 до 17:00</h4>
+                    <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
                     <span>1700</span>
                     <p>1700
                       <svg width="30" height="42" role="img" aria-label="ruble">
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button" href="#">купить абонемент</a>
+                    <a class="noselect tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Полный день</h3>
-                    <h4>с 8:00 до 22:00</h4>
+                    <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
                     <span>2700</span>
                     <p>2700
                       <svg width="30" height="42" role="img" aria-label="ruble">
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button" href="#">купить абонемент</a>
+                    <a class="noselect tabs__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
               </div>
               <div class="tab tab-2">
                 <ul class="list-reset tabs__content-list">
                   <li class="tabs__content-item">
-                    <h3>С тренером</h3>
-                    <h4>12 занятий</h4>
+                    <h3>С&nbsp;тренером</h3>
+                    <h4>12&nbsp;занятий</h4>
                     <span>25000</span>
                     <p>25000
                       <svg width="30" height="42" role="img" aria-label="ruble">
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button" href="#">купить абонемент</a>
+                    <a class="noselect tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Дневной</h3>
-                    <h4>с 8:00 до 17:00</h4>
+                    <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
                     <span>1300</span>
                     <p>1300
                       <svg width="30" height="42" role="img" aria-label="ruble">
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button" href="#">купить абонемент</a>
+                    <a class="noselect tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Полный день</h3>
-                    <h4>с 8:00 до 22:00</h4>
+                    <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
                     <span>2200</span>
                     <p>2200
                       <svg width="30" height="42" role="img" aria-label="ruble">
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button" href="#">купить абонемент</a>
+                    <a class="noselect tabs__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
               </div>
               <div class="tab tab-3">
                 <ul class="list-reset tabs__content-list">
                   <li class="tabs__content-item">
-                    <h3>С тренером</h3>
-                    <h4>12 занятий</h4>
+                    <h3>С&nbsp;тренером</h3>
+                    <h4>12&nbsp;занятий</h4>
                     <span>40000</span>
                     <p>40000
                       <svg width="30" height="42" role="img" aria-label="ruble">
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button" href="#">купить абонемент</a>
+                    <a class="noselect tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Дневной</h3>
-                    <h4>с 8:00 до 17:00</h4>
+                    <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
                     <span>1000</span>
                     <p>1000
                       <svg width="30" height="42" role="img" aria-label="ruble">
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button" href="#">купить абонемент</a>
+                    <a class="noselect tabs__button" href="#">купить абонемент</a>
                   </li>
                   <li class="tabs__content-item">
                     <h3>Полный день</h3>
-                    <h4>с 8:00 до 22:00</h4>
+                    <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
                     <span>1700</span>
                     <p>1700
                       <svg width="30" height="42" role="img" aria-label="ruble">
                         <use xlink:href="img/sprite_auto.svg#ruble"></use>
                       </svg>
                     </p>
-                    <a class="tabs__button" href="#">купить абонемент</a>
+                    <a class="noselect tabs__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
               </div>
@@ -245,8 +246,8 @@
                   <dd class="super-games__time-number"><span>12:00</span></dd>
                 </dl>
               </div>
-              <p>Ежегодные соревнования по CrossFit</p>
-              <a class="super-games__button" href="#">заполнить заявку</a>
+              <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+              <a class="noselect super-games__button" href="#">заполнить заявку</a>
             </div>
             <div class="super-games__image">
               <picture>
@@ -282,9 +283,9 @@
                     <h3>Анна Павлова</h3>
                     <span>CrossFit</span>
                     <ul class="list-reset trainers__feature">
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт &mdash; 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -297,14 +298,13 @@
                     </picture>
                     <h3>Алексей Лавров</h3>
                   </div>
-
                   <div class="trainers__swiper-content">
                     <h3>Алексей Лавров</h3>
                     <span>CrossFit</span>
                     <ul class="list-reset trainers__feature">
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт &mdash; 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -317,14 +317,13 @@
                     </picture>
                     <h3>Александр Пашков</h3>
                   </div>
-
                   <div class="trainers__swiper-content">
                     <h3>Александр Пашков</h3>
                     <span>CrossFit</span>
                     <ul class="list-reset trainers__feature">
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт &mdash; 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -337,14 +336,13 @@
                     </picture>
                     <h3>Мария Кетова</h3>
                   </div>
-
                   <div class="trainers__swiper-content">
                     <h3>Мария Кетова</h3>
                     <span>CrossFit</span>
                     <ul class="list-reset trainers__feature">
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт &mdash; 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -357,14 +355,13 @@
                     </picture>
                     <h3>Анна Павлова</h3>
                   </div>
-
                   <div class="trainers__swiper-content">
                     <h3>Анна Павлова</h3>
                     <span>CrossFit</span>
                     <ul class="list-reset trainers__feature">
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт &mdash; 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -377,14 +374,13 @@
                     </picture>
                     <h3>Алексей Лавров</h3>
                   </div>
-
                   <div class="trainers__swiper-content">
                     <h3>Алексей Лавров</h3>
                     <span>CrossFit</span>
                     <ul class="list-reset trainers__feature">
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт &mdash; 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -402,9 +398,9 @@
                     <h3>Александр Пашков</h3>
                     <span>CrossFit</span>
                     <ul class="list-reset trainers__feature">
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт &mdash; 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -422,9 +418,9 @@
                     <h3>Мария Кетова</h3>
                     <span>CrossFit</span>
                     <ul class="list-reset trainers__feature">
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт &mdash; 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -440,7 +436,6 @@
           </div>
         </div>
       </section>
-
       <section class="advantages">
         <div class="container">
           <h2>Наши преимущества</h2>
@@ -451,7 +446,7 @@
               </div>
               <div class="advantages__description">
                 <h3>Площадь</h3>
-                <p>Занимайтесь без&nbsp;очередей и&nbsp;толпучки</p>
+                <p>Занимайтесь без очередей и&nbsp;толпучки</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--parking">
@@ -460,7 +455,7 @@
               </div>
               <div class="advantages__description">
                 <h3>Собственная парковка</h3>
-                <p>Вы всегда найдете место для&nbsp;своей&nbsp;машины на&nbsp;нашей парковке</p>
+                <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
               </div>
             </li>
             <li class="advantages__item-trainer">
@@ -468,7 +463,7 @@
                 <p><span>100</span>Тренажеров</p>
               </div>
               <div class="advantages__description advantages__description--trainer">
-                <p>Современные тренажеры на&nbsp;все&nbsp;группы мышц</p>
+                <p>Современные тренажеры на&nbsp;все группы мышц</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--comfort">
@@ -500,10 +495,9 @@
               <div class="discount__text">
                 <span>Год</span>
                 <h3>4999</h3>
-                <p>Безлимитный абонемент в тренажерный зал</p>
-                <a class="discount__button discount__button-text" href="#">Подробнее</a>
+                <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                <a class="noselect discount__button discount__button-text" href="#">Подробнее</a>
               </div>
-
               <div class="discount__image">
                 <picture>
                   <source type="image/webp" srcset="img/discount.webp 1x, img/discount@2x.webp 2x">
@@ -516,13 +510,13 @@
               <ul class="list-reset discount__other-promo-list">
                 <li class="discount__other-promo-item discount__other-promo-item--month">
                   <h3>Месяц бесплатно</h3>
-                  <p>Приведи друга, получи абонемент в подарок</p>
-                  <a class="discount__button discount__other-promo-button" href="#">подробнее</a>
+                  <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+                  <a class="noselect discount__button discount__other-promo-button" href="#">подробнее</a>
                 </li>
                 <li class="discount__other-promo-item">
-                  <h3>Скидка 20%</h3>
-                  <p>Корпоративный фитнес с командой</p>
-                  <a class="discount__button discount__other-promo-button" href="#">подробнее</a>
+                  <h3>Скидка&nbsp;20%</h3>
+                  <p>Корпоративный фитнес с&nbsp;командой</p>
+                  <a class="noselect discount__button discount__other-promo-button" href="#">подробнее</a>
                 </li>
               </ul>
             </div>
@@ -532,9 +526,7 @@
       <section class="feedback">
         <div class="container">
           <h2>Отзывы</h2>
-
           <div class="feedback__swiper-container">
-
             <div class="feedback__slider swiper">
               <div class="swiper-wrapper">
                 <div class="feedback__item swiper-slide">
@@ -545,66 +537,54 @@
                       <img src="img/feedbackOrlova.png" srcset="img/feedbackOrlova@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
                     </picture>
                   </div>
-                  <div class="feedback__message">
-                    <h3>Анна Орлова</h3>
-                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  </div>
-                </div>
-                <div class="feedback__item swiper-slide">
-                  <div class="feedback__avatar">
-                    <picture>
-                      <source type="image/webp" srcset="img/feedbackOrlova.webp 1x, img/feedbackOrlova@2x.webp 2x">
-                      <!-- 1x: 80px, 2x: 160px -->
-                      <img src="img/feedbackOrlova.png" srcset="img/feedbackOrlova@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
-                    </picture>
-                  </div>
-                  <div class="feedback__message">
-                    <h3>Анна Орлова</h3>
-                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  </div>
-                </div>
-                <div class="feedback__item swiper-slide">
-                  <div class="feedback__avatar">
-                    <picture>
-                      <source type="image/webp" srcset="img/feedbackOrlova.webp 1x, img/feedbackOrlova@2x.webp 2x">
-                      <!-- 1x: 80px, 2x: 160px -->
-                      <img src="img/feedbackOrlova.png" srcset="img/feedbackOrlova@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
-                    </picture>
-                  </div>
-                  <!-- <div class="feedback__message"> -->
                   <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  <!-- </div> -->
-
+                  <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </div>
-
+                <div class="feedback__item swiper-slide">
+                  <div class="feedback__avatar">
+                    <picture>
+                      <source type="image/webp" srcset="img/feedbackOrlova.webp 1x, img/feedbackOrlova@2x.webp 2x">
+                      <!-- 1x: 80px, 2x: 160px -->
+                      <img src="img/feedbackOrlova.png" srcset="img/feedbackOrlova@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
+                    </picture>
+                  </div>
+                  <h3>Анна Орлова</h3>
+                  <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                </div>
+                <div class="feedback__item swiper-slide">
+                  <div class="feedback__avatar">
+                    <picture>
+                      <source type="image/webp" srcset="img/feedbackOrlova.webp 1x, img/feedbackOrlova@2x.webp 2x">
+                      <!-- 1x: 80px, 2x: 160px -->
+                      <img src="img/feedbackOrlova.png" srcset="img/feedbackOrlova@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
+                    </picture>
+                  </div>
+                  <h3>Анна Орлова</h3>
+                  <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                </div>
               </div>
             </div>
-
             <button class="feedback__swiper-button feedback__swiper-button--prev swiper-button-prev" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
             <button class="feedback__swiper-button feedback__swiper-button--next swiper-button-next" type="button">
               <span class="visually-hidden">Следующий слайд</span>
             </button>
-            <!-- <div class="feedback__swiper-button--prev"></div>
-            <div class="feedback__swiper-button--next"></div> -->
           </div>
         </div>
       </section>
-
       <section class="contact-us">
         <div class="contact-us__form">
           <div class="container">
           </div>
           <h2>Бесплатное занятие</h2>
           <form class="form noselect" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
-            <!-- <div class="form__inputs noselect"> -->
-            <label class="visually-hidden" for="your-name">Имя</label>
-            <input id="your-name" type="text" autofocus placeholder="Имя" name="name" aria-label="Ваше имя." minlength="2" maxlength="25" required>
-            <label class=" visually-hidden" for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" minlength="10" pattern="[\+]\d{1}[\s][\(]\d{3}[\)][\s]\d{3}[\s]\d{4}" placeholder="Телефон" required>
-            <!-- </div> -->
+            <div class="form__inputs noselect">
+              <label class="visually-hidden" for="your-name">Имя</label>
+              <input id="your-name" type="text" autofocus placeholder="Имя" name="name" aria-label="Ваше имя." minlength="2" maxlength="25" required>
+              <label class=" visually-hidden" for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" minlength="10" pattern="[\+]\d{1}[\s][\(]\d{3}[\)][\s]\d{3}[\s]\d{4}" placeholder="Телефон" required>
+            </div>
             <button class="form__button noselect" type="submit">Отправить</button>
           </form>
         </div>
@@ -615,11 +595,11 @@
               <ul class="list-reset contacts__list contacts__list--address">
                 <li class="contacts__item">
                   <h3>Адрес:</h3>
-                  <p>г.&nbsp;Омск, ул.&nbsp;60&nbsp;лет&nbsp;Октября,&nbsp;7</p>
+                  <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
                 </li>
                 <li class="contacts__item">
                   <h3>График работы:</h3>
-                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                  <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
                 </li>
               </ul>
               <ul class="list-reset contacts__list contacts__list--phone">
@@ -644,54 +624,31 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <a class="footer__logo logo" href="#">
-            <svg class="logo__image" width="89" height="25" role="img" aria-label="logo">
-              <use xlink:href="img/sprite_auto.svg#logo"></use>
-            </svg>
-          </a>
-          <!-- <nav class="footer__footer-nav footer-nav">
-            <ul class="list-reset footer-nav__list">
-              <li class="footer-nav__item">
-                <a class="noselect footer-nav__link" href="#">Услуги</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="noselect footer-nav__link" href="#">Абонементы</a>
-              </li>
-            </ul>
-            <ul class="list-reset footer-nav__list">
-              <li class="footer-nav__item">
-                <a class="noselect footer-nav__link" href="#">Акции</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="noselect footer-nav__link" href="#">Тренеры</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="noselect footer-nav__link" href="#">Расписание</a>
-              </li>
-            </ul>
-          </nav> -->
-          <!-- <nav class="footer__footer-nav footer-nav"> -->
-          <ul class="list-reset footer-nav__list footer-nav__list--first">
-            <li class="footer-nav__item">
-              <a class="noselect footer-nav__link" href="#">Услуги</a>
+          <ul class="list-reset footer__nav-list">
+            <li class="footer__nav-item-logo">
+              <a class="footer__logo logo" href="#">
+                <svg class="logo__image" width="89" height="25" role="img" aria-label="logo">
+                  <use xlink:href="img/sprite_auto.svg#logo"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-nav__item">
-              <a class="noselect footer-nav__link" href="#">Абонементы</a>
+            <li class="footer__nav-item">
+              <a class="noselect footer__nav-link" href="#">Услуги</a>
             </li>
-          </ul>
-          <ul class="list-reset footer-nav__list footer-nav__list--second">
-            <li class="footer-nav__item">
-              <a class="noselect footer-nav__link" href="#">Акции</a>
+            <li class="footer__nav-item">
+              <a class="noselect footer__nav-link" href="#">Абонементы</a>
             </li>
-            <li class="footer-nav__item">
-              <a class="noselect footer-nav__link" href="#">Тренеры</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="noselect footer-nav__link" href="#">Расписание</a>
-            </li>
-          </ul>
-          <!-- </nav> -->
 
+            <li class="footer__nav-item">
+              <a class="noselect footer__nav-link" href="#">Акции</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="noselect footer__nav-link" href="#">Тренеры</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="noselect footer__nav-link" href="#">Расписание</a>
+            </li>
+          </ul>
           <ul class="footer__social-list list-reset">
             <li class="footer__social-item">
               <a class="footer__social-link" href="#">

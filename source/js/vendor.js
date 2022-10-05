@@ -1,5 +1,5 @@
-import { swiper } from './vendor/swiper.js';
-
+import {swiper} from './vendor/swiper.js';
+swiper();
 // // const swiper = new Swiper('.trainers__swiper', {
 // const swiper = new Swiper('.trainers__swiper', {
 //   navigation: {

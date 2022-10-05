@@ -1,8 +1,6 @@
 .video {
-  // position: relative;
   position: absolute;
   top: 408px;
-  // left: 540px;
   left: 50%;
 
   transform: translate(-143px);
@@ -25,9 +23,6 @@
 }
 
 .video__image {
-  // position: absolute;
-  // top: -112px;
-  // left: 437px;
   z-index: 1;
 
   display: block;
@@ -64,6 +59,20 @@
   display: none;
 }
 
+.video__video iframe {
+  width: 364px;
+  height: 228px;
+
+  @media (max-width: $tablet-size-max) {
+    width: 266px;
+    height: 167px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    width: 100%;
+  }
+}
+
 .video__play-button {
   position: absolute;
   top: 65px;
@@ -95,51 +104,3 @@
 .video.is-play .video__play-button {
   display: none;
 }
-
-//   top: -35px;
-//   left: 50%;
-
-//   width: 72px;
-//   height: 72px;
-
-//   background: linear-gradient(44.89deg, $cobalt 25.38%, $torch-red 74.89%);
-//   border-radius: 50%;
-//   transform: translate(3px);
-//   cursor: pointer;
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     top: -11px;
-//     right: -14px;
-
-//     width: 100px;
-//     height: 100px;
-
-//     border: 2px solid $color-transparent;
-//     border-radius: 50%;
-//     border-image: linear-gradient(to bottom right, $torch-red, $cobalt);
-//     border-image-slice: 1;
-//   }
-
-//   &:hover,
-//   &:focus {
-//     opacity: 0.8;
-//   }
-
-//   &:active {
-//     opacity: 0.5;
-//   }
-// }
-
-// .video__button {
-//   top: 29px;
-//   left: 31px;
-//   z-index: 10;
-
-//   display: block;
-//   width: 15px;
-//   height: 15px;
-
-//   fill: $color-default-white;
-// }

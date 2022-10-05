@@ -31,6 +31,12 @@
 
   border-bottom: 2px solid transparent;
   cursor: pointer;
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 
   @media (max-width: $tablet-size-max) {
     padding-bottom: 11px;
@@ -47,10 +53,12 @@
   margin-bottom: -3px;
 
   border-color: $crimson;
+  opacity: 1;
 }
 
 .tab {
   display: none;
+  margin-bottom: 40px;
 }
 
 .tab.is-active {
@@ -61,17 +69,17 @@
   display: grid;
 
   gap: 40px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
 
   @media (max-width: $tablet-size-max) {
     grid-template-columns: none;
-    grid-template-rows: repeat(3, 1fr);
   }
 }
 
 .tabs__content-item {
   z-index: 2;
 
+  max-width: 360px;
   padding: 49px 40px 60px;
 
   text-align: center;
@@ -81,6 +89,7 @@
 
   @media (max-width: $tablet-size-max) {
     width: 442px;
+    max-width: none;
     height: auto;
     margin: 0 auto;
   }
@@ -122,8 +131,6 @@
   font-size: 16px;
   line-height: 150%;
   font-family: $ff-roboto-condensed;
-  // display: flex;
-  // align-items: center;
   color: $chambray;
 }
 
@@ -137,8 +144,6 @@
   font-family: $ff-roboto-condensed;
   color: $egyptian-blue;
 
-  // text-shadow: 10px 10px $white-smoke;
-
   @media (max-width: $tablet-size-max) {
     margin-bottom: 34px;
   }
@@ -151,41 +156,13 @@
   }
 }
 
-// .ddd {
-//   position: relative;
-
-//   font-weight: 700;
-//   font-size: 60px;
-//   line-height: 150%;
-//   font-family: $ff-roboto-condensed;
-//   color: $egyptian-blue;
-
-//   &::after {
-//     content: attr(data-price);
-//     position: absolute;
-//     bottom: -8px;
-//     left: -18px;
-//     z-index: -5;
-
-//     font-weight: 700;
-//     font-size: 100px;
-//     line-height: 150px;
-//     color: #e8e8e8;
-
-//     opacity: 0.48;
-//   }
-// }
-
 .tabs__content-item span {
   font-weight: 700;
   font-size: 100px;
   line-height: 150%;
   font-family: $ff-roboto-condensed;
-  // Blend: Pass through
-  // color: $whisper;
   color: rgba(232, 232, 232, 0.5);
 
-  // opacity: 48%;
   @media (max-width: $mobile-size-max) {
     font-size: 80px;
   }
@@ -213,8 +190,6 @@
   font-family: $ff-roboto-condensed;
   color: $sapphire;
   text-transform: uppercase;
-  // display: flex;
-  // align-items: center;
   letter-spacing: 0.05em;
 
   background-color: $color-default-white;

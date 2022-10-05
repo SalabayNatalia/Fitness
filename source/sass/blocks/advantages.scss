@@ -1,5 +1,5 @@
 .advantages {
-  padding: 118px 0 38px;
+  padding: 118px 0 35px;
 
   background-color: $ghost-white;
 
@@ -15,7 +15,7 @@
 
 .advantages h2 {
   margin-top: 0;
-  margin-bottom: 65px;
+  margin-bottom: 67px;
 
   font-size: 49px;
   line-height: 100%;
@@ -100,7 +100,7 @@
 
 .advantages__item--area,
 .advantages__item--parking {
-  padding-bottom: 55px;
+  padding-bottom: 78px;
 
   border-bottom: 2px solid;
   border-bottom-color: $advantages-border;
@@ -127,7 +127,7 @@
     left: 0;
 
     width: calc(442 / 768 * 100vw);
-    margin: 22px auto 48px;
+    margin: 44px auto 48px;
     padding: 30px 135px 39px;
 
     transform: none;
@@ -138,7 +138,7 @@
 
   @media (max-width: $mobile-size-max) {
     width: 100%;
-    margin: -21px 0 46px;
+    margin: 0 0 46px;
     padding: 40px 46px 45px;
   }
 }
@@ -246,10 +246,6 @@
     margin-left: 27px;
   }
 }
-
-// .advantages__description {
-//   text-align: center;
-// }
 
 .advantages__description h3 {
   margin-top: -4px;

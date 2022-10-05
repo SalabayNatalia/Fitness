@@ -1,30 +1,56 @@
 .form {
   display: grid;
-  // min-width: 410px;
 
   text-align: center;
 
-  gap: 30px;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 
   @media (max-width: $mobile-size-max) {
     width: 100%;
     min-width: 100%;
+
+    grid-template-rows: 1fr min-content;
   }
 }
 
-// .form__inputs {
-//   display: grid;
-//   margin-bottom: 20px;
+.form__inputs {
+  display: grid;
+  width: 70%;
+  margin-bottom: 20px;
+  margin-left: 53px;
 
-//   column-gap: 30px;
+  column-gap: 31px;
 
-//   grid-template-columns: 1fr 1fr;
-// }
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $tablet-size-max) {
+    width: 71%;
+    margin-left: 83px;
+
+    column-gap: 57px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    width: 100%;
+    margin-bottom: 38px;
+    margin-left: 0;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 35px;
+  }
+}
 
 .form input {
-  padding: 5px;
+  align-self: center;
+  padding-bottom: 5px;
+  padding-left: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  font-family: $ff-roboto-condensed;
+  color: $color-default-white;
 
   background-color: $color-transparent;
   border-top: none;
@@ -44,11 +70,17 @@
   &::placeholder {
     color: rgba(255, 255, 255, 0.7);
   }
+
+  @media (max-width: $mobile-size-max) {
+    padding-bottom: 6px;
+  }
 }
 
 .form__button {
-  width: 100%;
-  padding: 21px;
+  display: block;
+  width: 71%;
+  margin: 0 auto 0 51px;
+  padding: 19px;
 
   font-weight: 700;
   font-size: 14px;
@@ -73,5 +105,18 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-size-max) {
+    margin-left: 81px;
+    padding-bottom: 18px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    align-self: start;
+    width: 100%;
+    margin-left: 0;
+    padding-top: 17px;
+    padding-bottom: 17px;
   }
 }
