@@ -11,7 +11,7 @@
 
   @media (max-width: $mobile-size-max) {
     padding-top: 48px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 }
 
@@ -70,7 +70,6 @@
 
 .footer__nav-item {
   margin-right: 40px;
-  margin-bottom: 30px;
 
   @media (max-width: $tablet-size-max) {
     margin-right: 30px;
@@ -124,10 +123,6 @@
     max-width: none;
     margin-left: 0;
   }
-}
-
-.footer__social-item {
-  margin-bottom: 10px;
 }
 
 .footer__social-item:not(:last-child) {

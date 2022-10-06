@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>ProjectName</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Condensed.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="nojs">
@@ -110,11 +110,6 @@
               <li class="tabs-nav__item" data-tab-name="tab-2">6&nbsp;месяцев</li>
               <li class="tabs-nav__item" data-tab-name="tab-3">12&nbsp;месяцев</li>
             </ul>
-            <!-- <div class="list-reset tabs__nav tabs-nav">
-              <input type="radio" id="1" class="tabs-nav__item checked" data-tab-name="tab-1"><label for="1">1 месяц</label>
-              <input type="radio" id="2" class="tabs-nav__item" data-tab-name="tab-2"><label for="2">6 месяцев</label>
-              <input type="radio" id="3" class="tabs-nav__item" data-tab-name="tab-3"><label for="3">12 месяцев</label>
-            </div> -->
             <div class="tabs__content">
               <div class="tab tab-1 is-active">
                 <ul class="list-reset tabs__content-list">
@@ -259,7 +254,6 @@
           </div>
         </div>
       </section>
-
       <section class="trainers" id="trainers">
         <div class="trainers__container container">
           <h2>Тренеры</h2>
@@ -440,6 +434,14 @@
         <div class="container">
           <h2>Наши преимущества</h2>
           <ul class="list-reset advantages__list">
+            <li class="advantages__item-trainer">
+              <div class="advantages__trainer">
+                <p><span>100</span>Тренажеров</p>
+              </div>
+              <div class="advantages__description advantages__description--trainer">
+                <p>Современные тренажеры на&nbsp;все группы мышц</p>
+              </div>
+            </li>
             <li class="advantages__item advantages__item--area">
               <div class="advantages__statistics">
                 <p><span>900</span>кв/м</p>
@@ -458,14 +460,7 @@
                 <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
               </div>
             </li>
-            <li class="advantages__item-trainer">
-              <div class="advantages__trainer">
-                <p><span>100</span>Тренажеров</p>
-              </div>
-              <div class="advantages__description advantages__description--trainer">
-                <p>Современные тренажеры на&nbsp;все группы мышц</p>
-              </div>
-            </li>
+
             <li class="advantages__item advantages__item--comfort">
               <div class="advantages__statistics">
                 <p><span>350</span>мест</p>
@@ -532,9 +527,9 @@
                 <div class="feedback__item swiper-slide">
                   <div class="feedback__avatar">
                     <picture>
-                      <source type="image/webp" srcset="img/feedbackOrlova.webp 1x, img/feedbackOrlova@2x.webp 2x">
+                      <source type="image/webp" srcset="img/feedback-ava.webp 1x, img/feedback-ava@2x.webp 2x">
                       <!-- 1x: 80px, 2x: 160px -->
-                      <img src="img/feedbackOrlova.png" srcset="img/feedbackOrlova@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
+                      <img src="img/feedback-ava.png" srcset="img/feedback-ava@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
                     </picture>
                   </div>
                   <h3>Анна Орлова</h3>
@@ -543,9 +538,9 @@
                 <div class="feedback__item swiper-slide">
                   <div class="feedback__avatar">
                     <picture>
-                      <source type="image/webp" srcset="img/feedbackOrlova.webp 1x, img/feedbackOrlova@2x.webp 2x">
+                      <source type="image/webp" srcset="img/feedback-ava.webp 1x, img/feedback-ava@2x.webp 2x">
                       <!-- 1x: 80px, 2x: 160px -->
-                      <img src="img/feedbackOrlova.png" srcset="img/feedbackOrlova@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
+                      <img src="img/feedback-ava.png" srcset="img/feedback-ava@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
                     </picture>
                   </div>
                   <h3>Анна Орлова</h3>
@@ -554,9 +549,9 @@
                 <div class="feedback__item swiper-slide">
                   <div class="feedback__avatar">
                     <picture>
-                      <source type="image/webp" srcset="img/feedbackOrlova.webp 1x, img/feedbackOrlova@2x.webp 2x">
+                      <source type="image/webp" srcset="img/feedback-ava.webp 1x, img/feedback-ava@2x.webp 2x">
                       <!-- 1x: 80px, 2x: 160px -->
-                      <img src="img/feedbackOrlova.png" srcset="img/feedbackOrlova@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
+                      <img src="img/feedback-ava.png" srcset="img/feedback-ava@2x.png 2x" alt="Аватарка Анны Орловой." width="80" height="80">
                     </picture>
                   </div>
                   <h3>Анна Орлова</h3>
@@ -574,48 +569,48 @@
         </div>
       </section>
       <section class="contact-us">
-        <div class="contact-us__form">
-          <div class="container">
-          </div>
-          <h2>Бесплатное занятие</h2>
-          <form class="form noselect" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
-            <div class="form__inputs noselect">
-              <label class="visually-hidden" for="your-name">Имя</label>
-              <input id="your-name" type="text" autofocus placeholder="Имя" name="name" aria-label="Ваше имя." minlength="2" maxlength="25" required>
-              <label class=" visually-hidden" for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel" minlength="10" pattern="[\+]\d{1}[\s][\(]\d{3}[\)][\s]\d{3}[\s]\d{4}" placeholder="Телефон" required>
+        <div class="container">
+          <div class="contact-us__wrapper">
+            <div class="contact-us__form">
+              <h2>Бесплатное занятие</h2>
+              <form class="form noselect" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
+                <div class="form__inputs noselect">
+                  <label class="visually-hidden" for="your-name">Имя</label>
+                  <input id="your-name" type="text" autofocus placeholder="Имя" name="name" aria-label="Ваше имя." minlength="2" maxlength="25" required>
+                  <label class=" visually-hidden" for="tel">Телефон</label>
+                  <input type="tel" name="tel" id="tel" minlength="10" pattern="[\+]\d{1}[\s][\(]\d{3}[\)][\s]\d{3}[\s]\d{4}" placeholder="Телефон" required>
+                </div>
+                <button class="form__button noselect" type="submit">Отправить</button>
+              </form>
             </div>
-            <button class="form__button noselect" type="submit">Отправить</button>
-          </form>
-        </div>
-        <div class="contact-us__contacts contacts">
-          <div class="container">
-            <h2>Контакты</h2>
-            <div class="contacts__wrapper">
-              <ul class="list-reset contacts__list contacts__list--address">
-                <li class="contacts__item">
-                  <h3>Адрес:</h3>
-                  <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
-                </li>
-                <li class="contacts__item">
-                  <h3>График работы:</h3>
-                  <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
-                </li>
-              </ul>
-              <ul class="list-reset contacts__list contacts__list--phone">
-                <li class="contacts__item">
-                  <h3>Телефон:</h3>
-                  <a class="contacts__link-phone" href="tel:+78005555555">
-                    <p>8-800-555-55-55</p>
-                  </a>
-                </li>
-                <li class="contacts__item">
-                  <h3>Email:</h3>
-                  <a class="contacts__link-mail" href="mailto:omsk@supergym.ru">
-                    <p>omsk@supergym.ru</p>
-                  </a>
-                </li>
-              </ul>
+            <div class="contact-us__contacts contacts">
+              <h2>Контакты</h2>
+              <div class="contacts__wrapper">
+                <ul class="list-reset contacts__list contacts__list--address">
+                  <li class="contacts__item">
+                    <h3>Адрес:</h3>
+                    <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
+                  </li>
+                  <li class="contacts__item">
+                    <h3>График работы:</h3>
+                    <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                  </li>
+                </ul>
+                <ul class="list-reset contacts__list contacts__list--phone">
+                  <li class="contacts__item">
+                    <h3>Телефон:</h3>
+                    <a class="contacts__link-phone" href="tel:+78005555555">
+                      <p>8-800-555-55-55</p>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <h3>Email:</h3>
+                    <a class="contacts__link-mail" href="mailto:omsk@supergym.ru">
+                      <p>omsk@supergym.ru</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

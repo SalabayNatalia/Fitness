@@ -1494,14 +1494,6 @@ button,
   flex-grow: 1;
 }
 
-.rouble {
-  font-weight: 400 !important;
-  font-family: "Rouble", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1549,7 +1541,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding-right: 103px;
   padding-left: 103px;
@@ -2293,7 +2285,7 @@ button,
   bottom: 0;
   left: 0;
   z-index: -1;
-  padding: 32px;
+  padding: 32px 32px 15px;
   overflow: auto;
   background: rgba(16, 38, 84, 0.89);
   opacity: 0;
@@ -2323,7 +2315,6 @@ button,
 
 .trainers__feature {
   margin-top: 31px;
-  margin-bottom: 25px;
   font-size: 14px;
   line-height: 21px;
 }
@@ -2403,7 +2394,7 @@ button,
 }
 
 .advantages {
-  padding: 118px 0 35px;
+  padding: 118px 0 32px;
   background-color: #f8f9fc;
 }
 
@@ -2419,7 +2410,6 @@ button,
 }
 
 .advantages__list {
-  position: relative;
   display: -ms-grid;
   display: grid;
   width: 1038px;
@@ -2435,6 +2425,15 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.advantages__item:nth-child(2n) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
 }
 
 .advantages__item--area {
@@ -2452,9 +2451,6 @@ button,
 }
 
 .advantages__item-trainer {
-  position: absolute;
-  top: 40%;
-  left: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2462,13 +2458,19 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  align-self: start;
   width: 240px;
+  margin-top: 5px;
   padding: 50px 34px 60px;
   color: #ffffff;
   background: #1c3374;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+  justify-self: center;
 }
 
 .advantages__item--parking {
@@ -2484,13 +2486,6 @@ button,
 
 .advantages__item--seniority {
   grid-row: 2/-1;
-}
-
-.advantages__item--parking,
-.advantages__item--seniority {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
 }
 
 .advantages__statistics {
@@ -2573,7 +2568,7 @@ button,
 }
 
 .discount {
-  padding-top: 116px;
+  padding-top: 119px;
   padding-bottom: 80px;
 }
 
@@ -2726,7 +2721,7 @@ button,
 
 .feedback {
   padding-top: 39px;
-  padding-bottom: 99px;
+  padding-bottom: 121px;
   background-color: #ffffff;
 }
 
@@ -2835,9 +2830,16 @@ button,
 }
 
 .contact-us {
+  padding-top: 21px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff));
+  background: -o-linear-gradient(left, #102654 50%, #ffffff 50%);
+  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
+  border-top: 1px solid #102654;
+}
+
+.contact-us__wrapper {
   display: -ms-grid;
   display: grid;
-  padding-top: 21px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
@@ -2855,20 +2857,16 @@ button,
 }
 
 .contact-us__form {
-  padding: 61px 50px 62px;
-  background-color: #102654;
-  border-top: 1px solid #102654;
+  padding: 39px 50px 62px 0;
 }
 
 .contact-us__form h2 {
   margin-top: 0;
-  margin-right: 109px;
   margin-bottom: 29px;
   font-weight: 700;
   font-size: 49px;
   line-height: 130%;
   font-family: "BebasNeue", "Arial", sans-serif;
-  text-align: center;
   color: #ffffff;
   letter-spacing: 0.03em;
 }
@@ -2884,9 +2882,8 @@ button,
 .form__inputs {
   display: -ms-grid;
   display: grid;
-  width: 70%;
+  width: 77%;
   margin-bottom: 20px;
-  margin-left: 53px;
   -webkit-column-gap: 31px;
   -moz-column-gap: 31px;
   column-gap: 31px;
@@ -2943,9 +2940,8 @@ button,
 
 .form__button {
   display: block;
-  width: 71%;
-  margin: 0 auto 0 51px;
-  padding: 19px;
+  width: 78%;
+  padding: 19px 18px 19px 15px;
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
@@ -2970,10 +2966,9 @@ button,
 }
 
 .contacts {
-  padding: 68px 17px 62px;
+  padding: 47px 17px 62px 120px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   color: #102654;
-  border-top: 1px solid #74819c;
 }
 
 .contacts h3 {
@@ -3051,7 +3046,6 @@ button,
 
 .footer__nav-item {
   margin-right: 40px;
-  margin-bottom: 30px;
 }
 
 .footer__nav-link {
@@ -3060,7 +3054,6 @@ button,
   font-size: 14px;
   line-height: 16px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
-  vertical-align: center;
   vertical-align: top;
   color: #ffffff;
 }
@@ -3085,10 +3078,6 @@ button,
   margin-left: 15px;
   -ms-grid-columns: (auto)[3];
   grid-template-columns: repeat(3, auto);
-}
-
-.footer__social-item {
-  margin-bottom: 10px;
 }
 
 .footer__social-item:not(:last-child) {
@@ -3587,7 +3576,7 @@ button,
 
   .feedback {
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 
   .feedback h2 {
@@ -3615,43 +3604,54 @@ button,
 
   .contact-us {
     display: block;
-    padding-top: 50px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(52%, #ffffff), color-stop(48%, #102654));
+    background: -o-linear-gradient(bottom, #ffffff 52%, #102654 48%);
+    background: linear-gradient(to top, #ffffff 52%, #102654 48%);
+    border-top: none;
+  }
+
+  .contact-us__wrapper {
+    display: block;
   }
 
   .contact-us h2 {
     margin-bottom: 33px;
-    margin-left: 71px;
+    margin-left: 88px;
     font-size: 42px;
   }
 
   .contact-us__form {
-    padding-top: 63px;
-    padding-bottom: 68px;
+    margin-bottom: 138px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .contact-us__form h2 {
     margin-right: 0;
     margin-bottom: 24px;
-    margin-left: 83px;
+    margin-left: 88px;
     font-size: 42px;
     text-align: start;
   }
 
   .form__inputs {
-    width: 71%;
-    margin-left: 83px;
-    -webkit-column-gap: 57px;
-    -moz-column-gap: 57px;
-    column-gap: 57px;
+    width: 75%;
+    margin-left: 88px;
+    -webkit-column-gap: 61px;
+    -moz-column-gap: 61px;
+    column-gap: 61px;
   }
 
   .form__button {
-    margin-left: 81px;
+    width: 76%;
+    margin-left: 86px;
     padding-bottom: 18px;
   }
 
   .contacts {
-    padding-bottom: 63px;
+    padding: 0;
   }
 
   .contacts h3 {
@@ -3664,7 +3664,11 @@ button,
   }
 
   .contacts__wrapper {
-    margin-left: 71px;
+    margin-left: 88px;
+  }
+
+  .contacts__list--address {
+    padding-right: 4px;
   }
 
   .contacts__list--phone {
@@ -3979,7 +3983,16 @@ button,
     margin-bottom: 0;
   }
 
+  .advantages__item--area {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+
   .advantages__item-trainer {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
     width: 100%;
     margin: 0 0 46px;
     padding: 40px 46px 45px;
@@ -3988,6 +4001,24 @@ button,
   .advantages .container {
     margin: 0;
     padding: 0;
+  }
+
+  .advantages__item--parking {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .advantages__item--comfort {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .advantages__item--seniority {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
   }
 
   .advantages__item--parking,
@@ -4079,6 +4110,7 @@ button,
 
   .feedback {
     padding-top: 29px;
+    padding-bottom: 71px;
   }
 
   .feedback h2 {
@@ -4144,7 +4176,11 @@ button,
   }
 
   .contact-us {
-    padding-top: 21px;
+    padding-top: 64px;
+    padding-bottom: 65px;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(57%, #ffffff), color-stop(43%, #102654));
+    background: -o-linear-gradient(bottom, #ffffff 57%, #102654 43%);
+    background: linear-gradient(to top, #ffffff 57%, #102654 43%);
   }
 
   .contact-us h2 {
@@ -4154,9 +4190,8 @@ button,
   }
 
   .contact-us__form {
-    padding-right: 15px;
-    padding-bottom: 68px;
-    padding-left: 15px;
+    margin-bottom: 137px;
+    padding: 0;
   }
 
   .contact-us__form h2 {
@@ -4199,12 +4234,6 @@ button,
     padding-bottom: 17px;
   }
 
-  .contacts {
-    padding-right: 0;
-    padding-bottom: 66px;
-    padding-left: 0;
-  }
-
   .contacts__wrapper {
     margin-left: 0;
     -ms-grid-columns: none;
@@ -4226,7 +4255,7 @@ button,
 
   .footer {
     padding-top: 48px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 
   .footer__wrapper {

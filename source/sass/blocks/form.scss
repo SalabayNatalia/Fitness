@@ -15,19 +15,19 @@
 
 .form__inputs {
   display: grid;
-  width: 70%;
+  width: 77%;
   margin-bottom: 20px;
-  margin-left: 53px;
+  // margin-left: 53px;
 
   column-gap: 31px;
 
   grid-template-columns: 1fr 1fr;
 
   @media (max-width: $tablet-size-max) {
-    width: 71%;
-    margin-left: 83px;
+    width: 75%;
+    margin-left: 88px;
 
-    column-gap: 57px;
+    column-gap: 61px;
   }
 
   @media (max-width: $mobile-size-max) {
@@ -78,9 +78,9 @@
 
 .form__button {
   display: block;
-  width: 71%;
-  margin: 0 auto 0 51px;
-  padding: 19px;
+  width: 78%;
+  // margin: 0 auto 0 51px;
+  padding: 19px 18px 19px 15px;
 
   font-weight: 700;
   font-size: 14px;
@@ -108,7 +108,8 @@
   }
 
   @media (max-width: $tablet-size-max) {
-    margin-left: 81px;
+    width: 76%;
+    margin-left: 86px;
     padding-bottom: 18px;
   }
 

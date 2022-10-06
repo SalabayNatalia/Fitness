@@ -1,16 +1,17 @@
 .feedback {
   padding-top: 39px;
-  padding-bottom: 99px;
+  padding-bottom: 121px;
 
   background-color: $color-default-white;
 
   @media (max-width: $tablet-size-max) {
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 
   @media (max-width: $mobile-size-max) {
     padding-top: 29px;
+    padding-bottom: 71px;
   }
 }
 
