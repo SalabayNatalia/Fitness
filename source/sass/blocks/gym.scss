@@ -53,7 +53,6 @@
   }
 
   @media (max-width: $mobile-size-max) {
-    // margin-bottom: 40px;
     margin: 0 auto 34px;
     padding: 0 15px;
 
@@ -111,8 +110,6 @@
   font-size: 16px;
   line-height: 150%;
   font-family: $ff-roboto-condensed;
-  // display: flex;
-  // align-items: center;
   color: $sapphire;
 
   @media (max-width: $tablet-size-max) {

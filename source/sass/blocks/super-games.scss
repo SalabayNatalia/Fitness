@@ -1,6 +1,6 @@
 .super-games {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 58px;
 
   background-color: $color-default-white;
 
@@ -27,12 +27,16 @@
 }
 
 .super-games__text {
-  padding: 79px 76px 83px 77px;
+  padding: 79px 76px 74px 77px;
 
   background-color: $torch-red;
 
   @media (max-width: $tablet-size-max) {
-    padding: 45px 45px 49px;
+    padding: 45px 45px 39px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    padding-top: 47px;
   }
 }
 
@@ -40,7 +44,6 @@
   display: grid;
 
   column-gap: 52px;
-  // grid-template-columns: 1fr min-content;
 
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -90,9 +93,6 @@
 
 .super-games dt {
   padding-bottom: 5px;
-  // margin-bottom: 5px;
-  // display: flex;
-  // align-items: center;
 
   font-weight: 400;
   font-size: 18px;
@@ -122,7 +122,6 @@
 
   @media (max-width: $tablet-size-max) {
     margin-right: 2px;
-    // padding-bottom: 2px;
   }
 }
 
@@ -136,8 +135,6 @@
   line-height: 150%;
   font-family: $ff-roboto-condensed;
   color: $color-default-white;
-  // border-top: 1px solid $color-default-white;
-  // border-top: 1px solid $color-default-white;
 
   gap: 6px;
 
@@ -156,8 +153,6 @@
   font-size: 40px;
   line-height: 150%;
   font-family: $ff-roboto-condensed;
-  // display: flex;
-  // align-items: center;
   color: $color-default-white;
 
   @media (max-width: $tablet-size-max) {
@@ -168,6 +163,7 @@
 .super-games__button {
   display: block;
   max-width: 100%;
+  margin-bottom: 10px;
   padding: 26px;
 
   font-weight: 700;

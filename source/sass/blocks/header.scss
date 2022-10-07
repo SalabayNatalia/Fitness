@@ -17,7 +17,7 @@
 
   @media (max-width: $mobile-size-max) {
     padding-top: 18px;
-    padding-bottom: 78px;
+    padding-bottom: 68px;
   }
 }
 
@@ -70,7 +70,6 @@
 
   grid-template-columns: repeat(2, 1fr) 17%;
 
-  // grid-template-rows: 1fr auto;
   @media (max-width: $mobile-size-max) {
     display: block;
   }
@@ -167,9 +166,6 @@
   font-size: 14px;
   line-height: 150%;
   font-family: $ff-roboto-condensed;
-  // display: flex;
-  // align-items: center;
-  // text-align: right;
   color: $color-default-white;
 }
 
@@ -206,6 +202,7 @@
   display: block;
   align-self: flex-end;
   width: 230px;
+  margin-bottom: 10px;
   padding: 23px 33px 18px;
 
   font-weight: 700;

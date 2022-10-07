@@ -1701,6 +1701,7 @@ button,
   -ms-flex-item-align: end;
   align-self: flex-end;
   width: 230px;
+  margin-bottom: 10px;
   padding: 23px 33px 18px;
   font-weight: 700;
   font-size: 12px;
@@ -1944,31 +1945,40 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 29%;
+  width: 30%;
   margin: 0 auto 39px;
   text-align: center;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
 .tabs-nav__item {
-  padding-bottom: 9px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.tabs-nav__button {
+  margin-bottom: -2px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   color: #102654;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
   border-bottom: 2px solid transparent;
   cursor: pointer;
   opacity: 0.5;
 }
 
-.tabs-nav__item:hover,
-.tabs-nav__item:focus {
+.tabs-nav__button:hover,
+.tabs-nav__button:focus {
   opacity: 0.8;
 }
 
-.tabs-nav__item.is-active {
-  margin-bottom: -3px;
+.tabs-nav__item.is-active .tabs-nav__button {
   border-color: #d10a42;
   opacity: 1;
 }
@@ -2074,7 +2084,7 @@ button,
 
 .super-games {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 58px;
   background-color: #ffffff;
 }
 
@@ -2088,7 +2098,7 @@ button,
 }
 
 .super-games__text {
-  padding: 79px 76px 83px 77px;
+  padding: 79px 76px 74px 77px;
   background-color: #ed0233;
 }
 
@@ -2176,6 +2186,7 @@ button,
 .super-games__button {
   display: block;
   max-width: 100%;
+  margin-bottom: 10px;
   padding: 26px;
   font-weight: 700;
   font-size: 12px;
@@ -2857,12 +2868,12 @@ button,
 }
 
 .contact-us__form {
-  padding: 39px 50px 62px 0;
+  padding: 39px 50px 52px 0;
 }
 
 .contact-us__form h2 {
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 38px;
   font-weight: 700;
   font-size: 49px;
   line-height: 130%;
@@ -2875,15 +2886,17 @@ button,
   display: -ms-grid;
   display: grid;
   text-align: center;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: -webkit-min-content -webkit-min-content;
+  -ms-grid-rows: min-content min-content;
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
+  row-gap: 17px;
 }
 
 .form__inputs {
   display: -ms-grid;
   display: grid;
   width: 77%;
-  margin-bottom: 20px;
   -webkit-column-gap: 31px;
   -moz-column-gap: 31px;
   column-gap: 31px;
@@ -2895,6 +2908,7 @@ button,
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  margin-bottom: 10px;
   padding-bottom: 5px;
   padding-left: 0;
   font-weight: 400;
@@ -2941,6 +2955,7 @@ button,
 .form__button {
   display: block;
   width: 78%;
+  margin-bottom: 10px;
   padding: 19px 18px 19px 15px;
   font-weight: 700;
   font-size: 14px;
@@ -2951,6 +2966,7 @@ button,
   letter-spacing: 0.05em;
   background-color: rgba(255, 255, 255, 0);
   border: 3px solid #ffffff;
+  cursor: pointer;
   grid-column: 1/-1;
   grid-row: 2/-1;
 }
@@ -3082,6 +3098,7 @@ button,
 
 .footer__social-item:not(:last-child) {
   margin-right: 11px;
+  margin-bottom: 5px;
 }
 
 .footer__social-link {
@@ -3308,7 +3325,7 @@ button,
     margin-bottom: 44px;
   }
 
-  .tabs-nav__item {
+  .tabs-nav__button {
     padding-bottom: 11px;
     font-size: 18px;
   }
@@ -3338,7 +3355,7 @@ button,
   }
 
   .super-games__text {
-    padding: 45px 45px 49px;
+    padding: 45px 45px 39px;
   }
 
   .super-games__grid {
@@ -3433,7 +3450,7 @@ button,
   }
 
   .advantages h2 {
-    margin-bottom: 45px;
+    margin-bottom: 47px;
     font-size: 42px;
     letter-spacing: 1.3px;
   }
@@ -3623,14 +3640,14 @@ button,
   }
 
   .contact-us__form {
-    margin-bottom: 138px;
+    margin-bottom: 128px;
     padding-top: 0;
     padding-bottom: 0;
   }
 
   .contact-us__form h2 {
     margin-right: 0;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     margin-left: 88px;
     font-size: 42px;
     text-align: start;
@@ -3711,7 +3728,7 @@ button,
 
   .header {
     padding-top: 18px;
-    padding-bottom: 78px;
+    padding-bottom: 68px;
   }
 
   .header__wrapper {
@@ -3847,7 +3864,7 @@ button,
     margin-bottom: 35px;
   }
 
-  .tabs-nav__item {
+  .tabs-nav__button {
     font-size: 16px;
   }
 
@@ -3886,6 +3903,10 @@ button,
     display: block;
     -ms-grid-columns: none;
     grid-template-columns: none;
+  }
+
+  .super-games__text {
+    padding-top: 47px;
   }
 
   .super-games__image {
@@ -4184,13 +4205,13 @@ button,
   }
 
   .contact-us h2 {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
     margin-left: 0;
     font-size: 32px;
   }
 
   .contact-us__form {
-    margin-bottom: 137px;
+    margin-bottom: 128px;
     padding: 0;
   }
 
@@ -4211,13 +4232,13 @@ button,
 
   .form__inputs {
     width: 100%;
-    margin-bottom: 38px;
+    margin-bottom: 11px;
     margin-left: 0;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 35px;
+    row-gap: 25px;
   }
 
   .form input {

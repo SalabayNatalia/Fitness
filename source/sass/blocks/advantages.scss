@@ -25,7 +25,7 @@
   letter-spacing: 0.03em;
 
   @media (max-width: $tablet-size-max) {
-    margin-bottom: 45px;
+    margin-bottom: 47px;
 
     font-size: 42px;
     letter-spacing: 1.3px;
@@ -204,9 +204,6 @@
 
 .advantages__item--parking,
 .advantages__item--seniority {
-
-  // grid-column: 3 / 4;
-
   @media (max-width: $tablet-size-max) {
     margin-left: 15px;
 

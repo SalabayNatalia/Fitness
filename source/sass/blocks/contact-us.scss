@@ -1,5 +1,4 @@
 .contact-us {
-  // display: grid;
   padding-top: 21px;
 
   background: linear-gradient(
@@ -9,17 +8,10 @@
   );
   border-top: 1px solid $sapphire;
 
-  // grid-template-columns: 1fr 1fr;
-
   @media (max-width: $tablet-size-max) {
     display: block;
     padding-top: 63px;
     padding-bottom: 63px;
-    // background: linear-gradient(
-    //   to bottom,
-    //   $sapphire 50%,
-    //   $color-default-white 50%
-    // );
 
     background: linear-gradient(
       to top,
@@ -47,8 +39,6 @@
   grid-template-columns: 1fr 1fr;
 
   @media (max-width: $tablet-size-max) {
-    // grid-template-columns: none;
-    // grid-template-rows: 1fr 1fr;
     display: block;
   }
 }
@@ -73,7 +63,7 @@
   }
 
   @media (max-width: $mobile-size-max) {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
     margin-left: 0;
 
     font-size: 32px;
@@ -81,40 +71,34 @@
 }
 
 .contact-us__form {
-  padding: 39px 50px 62px 0;
-
-  // background-color: $sapphire;
-
-  // border-top: 1px solid $sapphire;
+  padding: 39px 50px 52px 0;
 
   @media (max-width: $tablet-size-max) {
-    margin-bottom: 138px;
+    margin-bottom: 128px;
     padding-top: 0;
     padding-bottom: 0;
   }
 
   @media (max-width: $mobile-size-max) {
-    margin-bottom: 137px;
+    margin-bottom: 128px;
     padding: 0;
   }
 }
 
 .contact-us__form h2 {
   margin-top: 0;
-  // margin-right: 109px;
-  margin-bottom: 29px;
+  margin-bottom: 38px;
 
   font-weight: 700;
   font-size: 49px;
   line-height: 130%;
   font-family: $ff-bebas-neue;
-  // text-align: center;
   color: $color-default-white;
   letter-spacing: 0.03em;
 
   @media (max-width: $tablet-size-max) {
     margin-right: 0;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     margin-left: 88px;
 
     font-size: 42px;

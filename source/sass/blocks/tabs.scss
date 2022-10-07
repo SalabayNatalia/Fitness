@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 29%;
+  width: 30%;
   margin: 0 auto 39px;
 
   text-align: center;
@@ -21,7 +21,15 @@
 }
 
 .tabs-nav__item {
-  padding-bottom: 9px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.tabs-nav__button {
+  margin-bottom: -2px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
 
   font-weight: 400;
   font-size: 20px;
@@ -29,6 +37,8 @@
   font-family: $ff-roboto-condensed;
   color: $sapphire;
 
+  background-color: $color-transparent;
+  border: none;
   border-bottom: 2px solid transparent;
   cursor: pointer;
   opacity: 0.5;
@@ -49,9 +59,7 @@
   }
 }
 
-.tabs-nav__item.is-active {
-  margin-bottom: -3px;
-
+.tabs-nav__item.is-active .tabs-nav__button {
   border-color: $crimson;
   opacity: 1;
 }
