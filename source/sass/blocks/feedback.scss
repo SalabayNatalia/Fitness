@@ -150,9 +150,12 @@
 }
 
 .feedback__swiper-button {
+  top: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
   padding: 0;
 
   background: none;

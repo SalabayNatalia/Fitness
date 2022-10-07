@@ -106,12 +106,15 @@
   }
 }
 
-.advantages__item--area,
-.advantages__item--parking {
+.advantages__item {
   padding-bottom: 78px;
 
   border-bottom: 2px solid;
   border-bottom-color: $advantages-border;
+}
+
+.advantages__item:nth-last-child(-n + 2) {
+  border-bottom: none;
 }
 
 .advantages__item-trainer {
