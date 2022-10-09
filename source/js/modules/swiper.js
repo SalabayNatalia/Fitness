@@ -27,11 +27,6 @@ export const initSwiper = function () {
         initialSlide: 2,
       },
       1200: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-        initialSlide: 0,
-      },
-      1366: {
         slidesPerView: 4,
         spaceBetween: 40,
         initialSlide: 0,
@@ -54,5 +49,3 @@ export const initSwiper = function () {
 
 
 };
-
-// export default initSwiper;

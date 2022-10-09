@@ -1360,7 +1360,6 @@ img,
 video {
   display: block;
   max-width: 100%;
-  height: auto;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
@@ -1790,7 +1789,6 @@ button,
 }
 
 .gym {
-  position: relative;
   padding-top: 120px;
   padding-bottom: 235px;
   background-color: #ffffff;
@@ -1799,16 +1797,14 @@ button,
 .gym__wrapper {
   display: -ms-grid;
   display: grid;
-  padding: 0 0 0 60px;
-  -webkit-column-gap: 85px;
-  -moz-column-gap: 85px;
-  column-gap: 85px;
-  -ms-grid-columns: auto auto;
-  grid-template-columns: auto auto;
+  gap: 22px;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
 }
 
 .gym__text {
-  margin-top: 50px;
+  max-width: 415px;
+  padding: 51px 0 50px 60px;
 }
 
 .gym h2 {
@@ -1841,9 +1837,10 @@ button,
   color: #102654;
 }
 
-.gym__image {
-  width: 660px;
-  height: 401px;
+.gym__image-container {
+  position: relative;
+  padding-bottom: 115px;
+  padding-left: 63px;
 }
 
 .gym__image img {
@@ -1858,18 +1855,20 @@ button,
 
 .video {
   position: absolute;
-  top: 408px;
-  left: 50%;
-  -webkit-transform: translate(-143px);
-  -ms-transform: translate(-143px);
-  transform: translate(-143px);
+  top: 288px;
+  left: 0;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  width: 364px;
+  height: 228px;
 }
 
 .video__image {
+  position: relative;
   z-index: 1;
-  display: block;
-  max-width: 100%;
-  height: auto;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
 }
 
 .video__image::before {
@@ -1882,32 +1881,39 @@ button,
 
 .video__image img {
   display: block;
-  width: 364px;
-  height: 228px;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
 }
 
 .video__video {
-  display: none;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #102654;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
 }
 
 .video__video iframe {
-  width: 364px;
-  height: 228px;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .video__play-button {
   position: absolute;
-  top: 65px;
+  top: 50%;
   left: 50%;
+  display: block;
   width: 100px;
   height: 100px;
-  -webkit-transform: translate(-50px);
-  -ms-transform: translate(-50px);
-  transform: translate(-50px);
-}
-
-.video.is-play .video__video {
-  display: block;
+  background-image: url(../img/svg/play.svg);
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .video.is-play .video__image {
@@ -2103,10 +2109,8 @@ button,
 .super-games__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: -webkit-min-content auto;
-  -ms-grid-columns: min-content auto;
-  grid-template-columns: -webkit-min-content auto;
-  grid-template-columns: min-content auto;
+  -ms-grid-columns: 500px 1fr;
+  grid-template-columns: 500px 1fr;
 }
 
 .super-games__text {
@@ -2221,17 +2225,10 @@ button,
   opacity: 0.5;
 }
 
-.super-games__image {
-  position: relative;
-}
-
 .super-games__image img {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: block;
   width: 100%;
-  height: 100%;
+  max-width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
@@ -2272,7 +2269,6 @@ button,
 
 .trainers__swiper-img {
   position: relative;
-  height: 292px;
 }
 
 .trainers__swiper-img img {
@@ -2701,7 +2697,7 @@ button,
   right: 0;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: top;
@@ -3056,8 +3052,8 @@ button,
 .footer__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 113px;
-  grid-template-columns: auto 113px;
+  -ms-grid-columns: 89px auto 113px;
+  grid-template-columns: 89px auto 113px;
 }
 
 .footer__nav-list {
@@ -3066,21 +3062,14 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 5px;
+  margin-left: 276px;
   justify-self: start;
 }
 
-.footer__logo {
-  margin-top: 0;
-}
-
-.footer__nav-item-logo {
-  margin-top: 0;
-  margin-right: 276px;
-}
-
 .footer__nav-item {
+  margin-top: 5px;
   margin-right: 40px;
+  margin-bottom: 5px;
 }
 
 .footer__nav-link {
@@ -3110,12 +3099,14 @@ button,
   -ms-flex-pack: start;
   justify-content: start;
   max-width: 110px;
+  margin-top: -5px;
   margin-left: 15px;
   -ms-grid-columns: (auto)[3];
   grid-template-columns: repeat(3, auto);
 }
 
-.footer__social-item:not(:last-child) {
+.footer__social-item {
+  margin-top: 5px;
   margin-right: 11px;
   margin-bottom: 5px;
 }
@@ -3288,8 +3279,10 @@ button,
   }
 
   .gym__text {
+    max-width: 570px;
+    margin: 0 auto;
     margin-top: 0;
-    margin-bottom: 44px;
+    padding: 0;
     text-align: center;
   }
 
@@ -3302,18 +3295,12 @@ button,
     margin-bottom: 34px;
   }
 
-  .gym p {
-    padding: 0 55px;
-  }
-
   .gym__big-text {
     display: none;
   }
 
-  .gym__image {
-    width: 678px;
-    height: 345px;
-    margin: auto;
+  .gym__image-container {
+    padding: 43px 0 83px;
   }
 
   .gym__image img {
@@ -3322,29 +3309,33 @@ button,
   }
 
   .video {
-    top: 587px;
-    -webkit-transform: translate(-133px);
-    -ms-transform: translate(-133px);
-    transform: translate(-133px);
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    width: 266px;
+    height: 167px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   .video__image img {
     width: 266px;
-    height: 167px;
+    height: auto;
   }
 
   .video__video iframe {
     width: 266px;
-    height: 167px;
+    height: auto;
   }
 
   .video__play-button {
-    top: 47px;
     width: 73px;
     height: 73px;
-    -webkit-transform: translate(-37px);
-    -ms-transform: translate(-37px);
-    transform: translate(-37px);
+  }
+
+  .video.is-play .video__video {
+    height: auto;
   }
 
   .abonements::before {
@@ -3398,6 +3389,11 @@ button,
     padding-top: 101px;
   }
 
+  .super-games__wrapper {
+    -ms-grid-columns: 292px 1fr;
+    grid-template-columns: 292px 1fr;
+  }
+
   .super-games__text {
     padding: 45px 45px 39px;
   }
@@ -3448,6 +3444,14 @@ button,
     border-width: 2px;
   }
 
+  .super-games__image {
+    position: static;
+  }
+
+  .super-games__image img {
+    position: static;
+  }
+
   .trainers {
     padding-top: 40px;
     padding-bottom: 100px;
@@ -3464,7 +3468,7 @@ button,
   }
 
   .trainers__swiper-img {
-    height: 294px;
+    height: auto;
   }
 
   .trainers__swiper-img h3 {
@@ -3598,8 +3602,8 @@ button,
 
   .discount__wrapper {
     margin-bottom: 30px;
-    -ms-grid-columns: 279px auto;
-    grid-template-columns: 279px auto;
+    -ms-grid-columns: auto 399px;
+    grid-template-columns: auto 399px;
   }
 
   .discount__text {
@@ -3613,7 +3617,8 @@ button,
   }
 
   .discount__image {
-    width: 142%;
+    width: 399px;
+    height: 462px;
   }
 
   .discount__other-promo-list {
@@ -3751,11 +3756,8 @@ button,
   }
 
   .footer__nav-list {
-    margin-top: 3px;
-  }
-
-  .footer__nav-item-logo {
-    margin-right: 62px;
+    margin-top: -1px;
+    margin-left: 55px;
   }
 
   .footer__nav-item {
@@ -3764,6 +3766,17 @@ button,
 
   .footer__social-list {
     max-width: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video.is-play .video__video {
+    width: 266px;
+    height: auto;
+  }
+
+  .trainers__swiper-img {
+    height: 294px;
   }
 }
 
@@ -3789,6 +3802,17 @@ button,
 
   .header__fitness {
     display: block;
+  }
+
+  .header__fitness-info {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    -ms-flex-line-pack: end;
+    align-content: end;
+    text-align: right;
   }
 
   .header__title {
@@ -3864,10 +3888,15 @@ button,
     padding-left: 0;
   }
 
-  .gym__image {
+  .gym__image-container {
     width: 100%;
     height: 313px;
     margin: 0 0 30px 0;
+  }
+
+  .gym__image {
+    height: 313px;
+    margin-bottom: 40px;
   }
 
   .gym__image img {
@@ -3876,10 +3905,11 @@ button,
   }
 
   .video {
-    top: 688px;
-    left: 0;
+    position: relative;
+    left: auto;
     width: 100%;
-    height: 167px;
+    height: auto;
+    margin: 0 auto;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
@@ -3887,10 +3917,20 @@ button,
 
   .video__image img {
     width: 100%;
+    height: 100%;
   }
 
   .video__video iframe {
     width: 100%;
+    height: 100%;
+    background-color: #102654;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+  }
+
+  .video.is-play .video__video {
+    width: 100%;
+    height: auto;
   }
 
   .abonements::before {
@@ -3958,7 +3998,12 @@ button,
   }
 
   .super-games__image {
-    height: 292px;
+    width: 100%;
+    height: auto;
+  }
+
+  .super-games__image img {
+    position: static;
   }
 
   .trainers {
@@ -3975,7 +4020,7 @@ button,
   }
 
   .trainers__swiper-img {
-    height: 274px;
+    height: auto;
   }
 
   .trainers__swiper-content {
@@ -4152,8 +4197,12 @@ button,
   }
 
   .discount__image {
-    width: 290px;
-    height: 299px;
+    width: 100%;
+    height: auto;
+  }
+
+  .discount__image img {
+    position: static;
   }
 
   .discount__other-promo-list {
@@ -4326,9 +4375,13 @@ button,
   .footer {
     padding-top: 48px;
     padding-bottom: 50px;
+    -webkit-columns: 2 auto;
+    -moz-columns: 2 auto;
+    columns: 2 auto;
   }
 
   .footer__wrapper {
+    display: block;
     -ms-grid-columns: none;
     grid-template-columns: none;
   }
@@ -4337,9 +4390,7 @@ button,
     display: block;
     margin-top: 0;
     margin-bottom: 15px;
-    -webkit-columns: 2 auto;
-    -moz-columns: 2 auto;
-    columns: 2 auto;
+    margin-left: 0;
   }
 
   .footer__nav-item-logo {
@@ -4358,6 +4409,33 @@ button,
   .footer__social-list {
     max-width: none;
     margin-left: 0;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+  }
+}
+
+@media (max-width: 320px) {
+  .video {
+    height: 167px;
+  }
+
+  .video.is-play .video__video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .super-games__image {
+    height: 292px;
+  }
+
+  .trainers__swiper-img {
+    height: 274px;
+  }
+
+  .discount__image {
+    width: 290px;
+    height: 299px;
   }
 }
 

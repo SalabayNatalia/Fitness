@@ -12,6 +12,8 @@
   @media (max-width: $mobile-size-max) {
     padding-top: 48px;
     padding-bottom: 50px;
+
+    columns: 2 auto;
   }
 }
 
@@ -24,9 +26,11 @@
 .footer__wrapper {
   display: grid;
 
-  grid-template-columns: auto 113px;
+  grid-template-columns: 89px auto 113px;
 
   @media (max-width: $mobile-size-max) {
+    display: block;
+
     grid-template-columns: none;
   }
 }
@@ -34,33 +38,37 @@
 .footer__nav-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5px;
+  // margin-top: 5px;
+  margin-left: 276px;
 
   justify-self: start;
 
   @media (max-width: $tablet-size-max) {
-    margin-top: 3px;
+    margin-top: -1px;
+    margin-left: 55px;
   }
 
   @media (max-width: $mobile-size-max) {
     display: block;
     margin-top: 0;
     margin-bottom: 15px;
-
-    columns: 2 auto;
+    margin-left: 0;
+    // columns: 2 auto;
   }
 }
 
-.footer__logo {
-  margin-top: 0;
-}
+// .footer__logo {
+//   margin-top: 0;
+// }
 
 .footer__nav-item-logo {
-  margin-top: 0;
-  margin-right: 276px;
+
+  // margin-top: 0;
+
+  // margin-right: 276px;
 
   @media (max-width: $tablet-size-max) {
-    margin-right: 62px;
+    // margin-right: 62px;
   }
 
   @media (max-width: $mobile-size-max) {
@@ -69,7 +77,9 @@
 }
 
 .footer__nav-item {
+  margin-top: 5px;
   margin-right: 40px;
+  margin-bottom: 5px;
 
   @media (max-width: $tablet-size-max) {
     margin-right: 30px;
@@ -111,6 +121,7 @@
   display: grid;
   justify-content: start;
   max-width: 110px;
+  margin-top: -5px;
   margin-left: 15px;
 
   grid-template-columns: repeat(3, auto);
@@ -122,10 +133,13 @@
   @media (max-width: $mobile-size-max) {
     max-width: none;
     margin-left: 0;
+
+    column-span: all;
   }
 }
 
-.footer__social-item:not(:last-child) {
+.footer__social-item {
+  margin-top: 5px;
   margin-right: 11px;
   margin-bottom: 5px;
 }
@@ -152,3 +166,158 @@
 .footer__social-link:active .footer__social {
   opacity: 0.5;
 }
+
+// .footer {
+//   padding-top: 43px;
+//   padding-bottom: 50px;
+
+//   background-color: $black-russian;
+
+//   @media (max-width: $tablet-size-max) {
+//     padding-top: 47px;
+//     padding-bottom: 40px;
+//   }
+
+//   @media (max-width: $mobile-size-max) {
+//     padding-top: 48px;
+//     padding-bottom: 50px;
+//   }
+// }
+
+// .footer .container {
+//   @media (max-width: $tablet-size-max) {
+//     padding-right: 38px;
+//   }
+// }
+
+// .footer__wrapper {
+//   display: grid;
+
+//   grid-template-columns: auto 113px;
+
+//   @media (max-width: $mobile-size-max) {
+//     grid-template-columns: none;
+//   }
+// }
+
+// .footer__nav-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-top: 5px;
+
+//   justify-self: start;
+
+//   @media (max-width: $tablet-size-max) {
+//     margin-top: 3px;
+//   }
+
+//   @media (max-width: $mobile-size-max) {
+//     display: block;
+//     margin-top: 0;
+//     margin-bottom: 15px;
+
+//     columns: 2 auto;
+//   }
+// }
+
+// .footer__logo {
+//   margin-top: 0;
+// }
+
+// .footer__nav-item-logo {
+//   margin-top: 0;
+//   margin-right: 276px;
+
+//   @media (max-width: $tablet-size-max) {
+//     margin-right: 62px;
+//   }
+
+//   @media (max-width: $mobile-size-max) {
+//     margin-bottom: 26px;
+//   }
+// }
+
+// .footer__nav-item {
+//   margin-right: 40px;
+
+//   @media (max-width: $tablet-size-max) {
+//     margin-right: 30px;
+//   }
+
+//   @media (max-width: $mobile-size-max) {
+//     margin-right: 60px;
+//     margin-bottom: 16px;
+//   }
+// }
+
+// .footer__nav-link {
+//   display: inline-block;
+
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 16px;
+//   font-family: $ff-roboto-condensed;
+//   vertical-align: top;
+//   color: $color-default-white;
+
+//   &:hover,
+//   &:focus {
+//     color: $java;
+
+//     border-color: $java;
+//   }
+
+//   &:active {
+//     opacity: 0.5;
+//   }
+
+//   @media (max-width: $mobile-size-max) {
+//     font-size: 16px;
+//   }
+// }
+
+// .footer__social-list {
+//   display: grid;
+//   justify-content: start;
+//   max-width: 110px;
+//   margin-left: 15px;
+
+//   grid-template-columns: repeat(3, auto);
+
+//   @media (max-width: $tablet-size-max) {
+//     max-width: 90px;
+//   }
+
+//   @media (max-width: $mobile-size-max) {
+//     max-width: none;
+//     margin-left: 0;
+//   }
+// }
+
+// .footer__social-item:not(:last-child) {
+//   margin-right: 11px;
+//   margin-bottom: 5px;
+// }
+
+// .footer__social-link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 25px;
+//   height: 25px;
+// }
+
+// .footer__social {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .footer__social-link:hover .footer__social,
+// .footer__social-link:focus .footer__social {
+//   fill: $java;
+//   stroke: $java;
+// }
+
+// .footer__social-link:active .footer__social {
+//   opacity: 0.5;
+// }
