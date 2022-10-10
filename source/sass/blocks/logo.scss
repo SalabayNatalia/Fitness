@@ -1,26 +1,24 @@
 .logo {
   display: block;
-  margin-top: 2px;
-
-  @media (max-width: $mobile-size-max) {
-    width: 68px;
-    height: 15px;
-    margin-top: 0;
-    margin-right: 0;
-  }
-}
-
-.logo__image {
   width: 89px;
   height: 20px;
 
+  color: #ffffff;
+
   @media (max-width: $tablet-size-max) {
     width: 82px;
-    height: 18px;
+    height: 17px;
   }
 
   @media (max-width: $mobile-size-max) {
-    width: 68px;
+    width: 65px;
     height: 15px;
+    margin-top: -2px;
   }
+}
+
+.logo svg {
+  width: 100%;
+
+  fill: currentColor;
 }

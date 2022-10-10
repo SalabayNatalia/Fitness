@@ -42,6 +42,7 @@ export const initSwiper = function () {
     },
 
     loop: false,
+    autoHeight: true,
     simulateTouch: false,
     slidesPerView: 1,
 
